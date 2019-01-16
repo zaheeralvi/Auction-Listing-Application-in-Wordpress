@@ -1,0 +1,163 @@
+/* ======================================================================================================================================================
+Table
+====================================================================================================================================================== */
+
+/*data table*/
+
+
+div .avia-table {background: transparent; width:100%; clear:both; margin:30px 0; table-layout: fixed;}
+.avia-data-table .avia-heading-row .avia-desc-col{border-top:none; border-left:none;}
+.avia-data-table .avia-button-row td{text-align: center;}
+.avia-data-table .avia-center-col{text-align: center;}
+.avia-data-table td:before{display:none;}
+.avia-data-table .avia-pricing-row td, .avia-data-table .avia-pricing-row th{text-align: center; font-size: 40px; line-height: 1.3em}
+.avia-data-table .avia-desc-col{text-align: right;}
+.avia-data-table .avia-pricing-row small{display: block; font-size: 11px; font-style: italic; line-height: 1.7em; }
+.avia-data-table .avia-pricing-row .avia-desc-col{font-size: 14px; text-align: right;}
+
+/*minimal data table*/
+.avia-data-table.avia_pricing_minimal th,
+.avia-data-table.avia_pricing_minimal td{text-align: center; padding:12px; color: inherit; }
+#top .avia-data-table.avia_pricing_minimal tr{background: transparent;}
+
+
+
+@media only screen and (max-width: 767px)
+{
+	.responsive div .avia_responsive_table .avia-data-table table,
+    .responsive div .avia_responsive_table .avia-data-table tbody,
+    .responsive div .avia_responsive_table .avia-data-table tr,
+    .responsive div .avia_responsive_table .avia-data-table td,
+    .responsive div .avia_responsive_table .avia-data-table th{display:block; border-top:none; border-right:none; border-left:none; text-align: center;}
+    .responsive .avia_responsive_table .avia-data-table{border-style:solid; border-width: 1px;}
+    .responsive .avia_responsive_table .avia-data-table .avia-pricing-row .avia-desc-col{text-align: center;}
+    .responsive .avia_responsive_table .avia-data-table .avia-button-row, .responsive .avia_responsive_table .avia-data-table tr:first-child th{display:none;}
+    .responsive .avia_responsive_table .avia-data-table td:before {
+	display:block;
+	font-style: italic; font-size: 11px;
+	}
+
+	.responsive .avia_responsive_table .avia-data-table td {
+		position: relative;
+	}
+
+    .responsive .avia_scrollable_table {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+	
+    .avia_scrollable_table .avia-table {
+    	width: auto;
+    }
+
+    .responsive .avia_scrollable_table .avia-data-table > thead > tr > th,
+    .responsive .avia_scrollable_table .avia-data-table > tbody > tr > th,
+    .responsive .avia_scrollable_table .avia-data-table > tfoot > tr > th,
+    .responsive .avia_scrollable_table .avia-data-table > thead > tr > td,
+    .responsive .avia_scrollable_table .avia-data-table > tbody > tr > td,
+    .responsive .avia_scrollable_table .avia-data-table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+}
+
+/*pricing table*/
+
+.avia-pricing-table-container {position: relative; clear: both; width:100%; display:table; table-layout: fixed;}
+.pricing-table-wrap {display:table-cell;}
+.pricing-table {margin:10px;}
+.pricing-table>li{
+list-style-type: none;
+list-style-position: outside;
+padding:9px 12px;
+border-top-style:solid;
+border-top-width:1px;
+border-left-style:solid;
+border-left-width:1px;
+border-right-style:solid;
+border-right-width:1px;
+margin:0;
+text-align: center;
+position: relative;
+
+}
+
+.avia-pricing-table-container .pricing-table>li:last-child{
+border-bottom-left-radius:  3px; border-bottom-right-radius:  3px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+display: block;
+}
+
+
+.pricing-table > li:first-child, .pricing-extra{
+border-top-left-radius:  3px; border-top-right-radius:  3px;
+border-top-style:solid;
+border-top-width:1px;
+border-left-style:solid;
+border-left-width:1px;
+border-right-style:solid;
+border-right-width:1px;
+}
+
+.pricing-extra{display:none;}
+.avia-desc-col.pricing-table li{border-style:dashed; border-left:none; border-right:none; text-align: right; }
+#top .avia-desc-col.pricing-table .avia-button-row{border:none;}
+#top .avia-button-row .avia-button-wrap{margin:10px 0;}
+.avia-center-col.pricing-table{text-align: center;}
+.pricing-table li.avia-pricing-row {text-align: center; font-size: 60px; line-height: 1em; padding:25px 12px;
+/* text-shadow: 0 2px 0 #C9C9C9, 0 3px 0 #BBB, 0 3px 0 #B9B9B9, 0 1px 0 #AAA, 0 1px 1px rgba(0, 0, 0, .1), 0 0 3px rgba(0, 0, 0, .1), 0 4px 10px rgba(0, 0, 0, .2); */
+font-weight:600;
+}
+.pricing-table li.avia-pricing-row small{
+display: block;
+font-size: 16px;
+font-style: italic;
+line-height: 1.4em;
+font-weight: normal;
+letter-spacing: 1px;
+text-shadow:none;
+}
+
+.pricing-table.avia-highlight-col .pricing-extra{
+display:block;
+position: absolute;
+top:-20px;
+height:25px;
+left:-1px;
+right:-1px;
+border-top-left-radius:  5px; border-top-right-radius:  5px;
+}
+
+.pricing-table li.empty-table-cell{display:none;}
+.pricing-table.avia-desc-col li.empty-table-cell{display:block;}
+.fallback-table-val{visibility: hidden;}
+.pricing-table.avia-highlight-col{box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.1); margin:4px;}
+.pricing-table.avia-highlight-col>li:last-child {padding-bottom:25px;}
+.pricing-table.avia-highlight-col .first-table-item{
+position: relative;
+top: -9px;
+z-index: 10;
+}
+
+.pricing-table li.avia-pricing-row .currency-symbol{font-size:0.5em; position: relative; top:-0.6em; line-height: 1em; text-shadow:none; font-weight:normal; }
+.avia_pricing_default .pricing-table li.avia-pricing-row small, .avia_pricing_default .pricing-table li.avia-pricing-row .currency-symbol{opacity: 0.4;color:#fff;filter:alpha(opacity=40); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);}
+
+/*style variation*/
+.avia_show_empty_cells .pricing-table .empty-table-cell{display:block;}
+.avia_pricing_minimal .pricing-table{box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1); }
+#top .avia_pricing_minimal .pricing-table>li{border:none;}
+.avia_pricing_minimal .pricing-table > li:first-child, #top .avia_pricing_minimal .pricing-extra, .avia_pricing_minimal .pricing-table>li:last-child{border-radius: 0; border: none;}
+
+.avia_pricing_minimal .pricing-table.avia-highlight-col .pricing-extra{left:0; right:0;}
+.avia_pricing_minimal .pricing-table li.avia-pricing-row{font-weight:300;}
+
+@media only screen and (max-width: 767px)
+{
+	.responsive .avia-pricing-table-container , .responsive .pricing-table-wrap{display:block;}
+	.responsive .pricing-table{display:block; margin-bottom:40px;}
+	.responsive .pricing-table.avia-desc-col{display:none;}
+
+}

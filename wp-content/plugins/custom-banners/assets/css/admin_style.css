@@ -1,0 +1,956 @@
+.gold_plugins_settings .plugin_is_registered {
+    background-color: white;
+    border-left: 4px solid green;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    color: green;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.gold_plugins_settings .plugin_is_not_registered {
+    background-color: white;
+    border-left: 6px solid orangered;
+    color: orangered;
+    font-weight: bold;
+    padding: 10px 15px;
+	margin: 10px auto;
+}
+.gold_plugins_settings .plugin_is_not_registered a {
+    color: #0074a2;
+    text-decoration: underline;
+}
+
+/* GP Widget styling (in admin) */
+.gp_admin_widget_fieldset {
+	border: 1px solid lightgray;
+    margin: 30px 0 40px;
+    padding: 10px 17px;
+}
+
+.gp_admin_widget_fieldset legend {
+    margin-left: -4px;
+    padding: 0 4px;
+}
+
+.gp_admin_widget_fieldset > p {
+    margin: 10px 3px;
+    
+}
+
+/* Custom CSS Box */
+#custom_banners_custom_css {
+    height: 250px;
+	resize: both;
+    width: 500px;
+}
+
+/* New Signup Style */
+.gold_plugins_settings {
+    position: relative;
+}
+
+.wrap.gold_plugins_settings {
+    padding-right: 0px;
+}
+
+@media only screen and (min-width: 1074px) {
+    .gold_plugins_settings.not_pro {
+        padding-right: 300px;
+    }
+}
+
+/* Small Blue Button Style */
+.gold_plugins_settings .smallBlueButton {
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%) repeat scroll 0 0 #79bbff;
+    border: 1px solid #337bc4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -2px #111, 0 2px 5px 0 rgba(255, 255, 255, 0.3) inset;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #528ecc;
+}
+.gold_plugins_settings .smallBlueButton:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%) repeat scroll 0 0 #378de5;
+}
+.gold_plugins_settings .smallBlueButton:active {
+    position: relative;
+    top: 1px;
+}
+/* End Blue Button Style */
+
+.post-type-banner #postimagediv .attachment-full {
+	max-width: 100%;
+	max-height: 400px;
+	height: auto;
+	width: auto;
+}
+.post-type-banner .wp-editor-container {
+	background-color:#fff;
+	margin-bottom: 20px;
+}
+.post-type-banner #wp-content-wrap #wp-content-editor-tools {
+	background-color:#fff;
+}
+
+.custom_banners_registered {
+    background-color: white;
+    border-left: 4px solid lightseagreen;
+    box-shadow: 1px 1px 1px lightgray;
+    font-weight: bold;
+	margin-bottom: 25px;
+    padding: 15px;
+    width: 860px;
+	margin: 25px 2px;
+}
+.custom_banners_not_registered {
+    background-color: white;
+    border-left: 4px solid red;
+    box-shadow: 1px 1px 1px lightgray;
+    font-weight: bold;
+	margin-bottom: 25px;
+    padding: 15px;
+    width: 860px;
+	margin: 25px 2px;
+}
+
+.custom_banners_not_registered h3 {
+	border-bottom: 1px solid lightgray;
+    color: darkcyan;
+    margin-top: 0;
+    padding-bottom: 12px;
+}
+div.custom_banners_not_registered {
+	box-sizing: border-box;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    width: 100%;
+}
+div.custom_banners_not_registered > p {
+	margin-left: 2px;
+}
+
+.gold_plugins_settings fieldset:not(.gp_fieldset_plain) {
+	border: 1px solid #ccc !important;
+	display: block;
+	margin: 20px 0 !important;
+	padding: 0 20px !important;
+}
+
+.gold_plugins_settings fieldset:not(.gp_fieldset_plain) legend {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* End New Signup Style */
+/* Theme Preview screen */
+#custom_banners_theme_preview {
+	max-width: 800px;
+	margin-top: 20px;
+	padding-top: 50px;
+    position: relative;
+}
+
+#custom_banners_theme_preview_title {
+	margin-top: 0;
+	margin-left: 4px;
+}
+
+#custom_banners_theme_preview_browser {
+	background-image: url('../img/browser-preview-middle.png');
+	height: 39px;
+	margin: 0 20px;
+	position: relative;
+}
+
+#custom_banners_theme_preview_browser::before {
+	background-image: url('../img/browser-preview-left.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	content: " ";
+	height: 39px;
+	position: absolute;
+	left: -20px;
+	top: 0;
+	width: 200px;
+}
+
+#custom_banners_theme_preview_browser::after {
+	background-image: url('../img/browser-preview-right.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+	content: " ";
+	height: 39px;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	width: 40px;
+}
+
+#custom_banners_theme_preview_content {
+	background-color: #fff;
+	border: 1px solid lightgray;
+    margin: 0 0 0 4px;
+    max-width: 800px;
+    padding: 50px 30px 30px;
+	max-width: 800px;
+}
+
+#custom_banners_theme_preview_color_picker {
+	position: absolute;
+    right: 0;
+    text-align: right;
+    top: -10px;
+	z-index: 100;
+}
+
+#custom_banners_theme_preview_color_picker .form-table {
+
+}
+
+#custom_banners_theme_preview_color_picker .form-table label {
+	font-size: 12px;
+}
+
+#custom_banners_theme_preview_color_picker .form-table th {
+	padding: 0;
+	vertical-align: middle;
+	text-align: right;
+}
+
+#custom_banners_theme_preview_color_picker .form-table tr {
+	padding: 0;
+}
+
+#custom_banners_theme_preview_color_picker .form-table td {
+	padding: 0;
+}
+
+
+#custom_banners_theme_preview_color_picker label {
+	display: inline-block;
+}
+
+#custom_banners_theme_preview_color_picker .bikeshed.bikeshed_color {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#custom_banners_themes_pro_warning {
+    background: white none repeat scroll 0 0;
+    border-left: 3px solid orangered;
+    border-radius: 2px;
+    box-shadow: -2px 2px 2px #ccc;
+    font-weight: bold;
+    margin: 20px 0;
+    max-width: 760px;
+    padding: 3px 20px;
+}
+
+#custom_banners_themes_pro_warning h3 {
+	font-size: 18px;
+	color: green;
+	margin-top: 18px;
+}
+
+/* keep thumbnail column from being huge */
+.manage-column.column-cbp_banner_preview {
+    max-width: 105px !important;
+    overflow: hidden;
+    width: 105px !important;
+}
+/* hide media buttons on captions */
+.wp-admin.post-type-banner .wp-media-buttons {
+    display: none;
+}
+
+/* global widget styles */ 
+.gp_widget_form_wrapper fieldset.radio_text_input{border:1px solid #d3d3d3;margin:10px 3px 20px;padding:10px}.gp_widget_form_wrapper fieldset.radio_text_input .bikeshed_radio{margin-top:-15px}.gp_widget_form_wrapper fieldset.radio_text_input .bikeshed_radio p{margin-top:0}.gp_widget_form_wrapper fieldset.radio_text_input .bikeshed_radio .radio_option label{display:inline-block;width:auto}.gp_widget_form_wrapper fieldset.radio_text_input .bikeshed_radio .radio_option input[type=text]{display:inline-block;margin:0 2px 0 4px;position:relative;text-align:right;top:2px;width:50px}.gp_widget_form_wrapper fieldset.radio_text_input .bikeshed_radio .radio_option.px_label::after{content:" px";position:relative;top:2px}.gp_widget_form_wrapper select{width:99%}.gp_widget_form_wrapper select.multi_left{width:37%;margin-right:2%;float:left}.gp_widget_form_wrapper select.multi_right{width:59%}.customize-control .gp_widget_form_wrapper select.multi_left,.customize-control .gp_widget_form_wrapper select.multi_right{min-width:35%}.gp_widget_form_wrapper .description.after_checkbox{margin-top:-7px!important;padding-left:24px!important}
+
+
+
+/* New Admin Styles */
+.gold_plugins_settings .form-table th {
+	display: block;
+    padding: 20px 10px 0 0;
+    width: 100%;
+}
+
+.gold_plugins_settings .form-table td {
+    display: block;
+	padding: 15px 0;
+}
+
+.gold_plugins_settings #message {
+    margin: 20px 0;
+}
+
+.gold_plugins_settings .import_response {
+    height: auto;
+}
+.gold_plugins_settings h4 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.custom_banners_support_button {
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0 0;
+    padding: 10px;
+    text-decoration: none;
+}
+/* GP Support Form CSS */
+.gp_support_form_wrapper label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 2px;
+}
+.gp_support_form_wrapper .form_field {
+    margin: 10px 0;
+}
+.gp_support_form_wrapper {
+    margin: 20px 0;
+}
+.help_box {
+    margin: 25px 0;
+}
+.help_box > p {
+    margin: 0 0 1em;
+}
+.gold_plugins_settings .button {
+    white-space: normal;
+}
+.gold_plugins_settings .label_text {
+    display: block;
+    margin-left: 26px;
+}
+div.gp_updated {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid green;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0px 10px 0;
+    padding: 1px 12px;
+}
+div.gp_error {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid red;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 0px 10px 0;
+    padding: 1px 12px;
+}
+
+#wpbody-content > .gp_updated,
+#wpbody-content > .gp_error {
+    margin-right: 10px;
+}
+
+.ajax_response_message {
+    color: forestgreen;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Sajak Changes */
+.gp_sajak td > label {
+    font-weight: 600;
+}
+
+/* Upgrade Page */
+.custom_banners_admin_wrap {
+	position: relative;
+}
+.custom_banners_admin_wrap .stars {
+    margin-bottom: 10px;
+    white-space: nowrap
+}
+.custom_banners_admin_wrap .stars  .dashicons-star-filled {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;	
+}
+.custom_banners_admin_wrap .gp_upgrade {
+	max-width: 95%;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_header {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body {
+    background-color: white;
+    border: 1px solid lightgray;
+	padding: 0;
+	max-width: 960px;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .customer_testimonial {
+	width: 480px;
+	box-sizing: border-box;
+	margin-left: 0px;
+	padding: 50px 40px 20px;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .header_wrapper {
+	box-shadow: 0px 5px 10px lightgray;
+	height: auto;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .video_wrapper iframe {
+	max-width: 100%;	
+}
+
+@media only screen and (max-width: 600px) {
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_header {
+		line-height: 1.25;
+	}
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .customer_testimonial {
+		padding: 20px;
+		max-width: 100%;
+		width: auto;
+	}
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .upgrade_left_col {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 1160px) {
+
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body {
+		max-width: 480px;
+		min-width: 300px;
+	}
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .bottom_cols > div {
+		border: 0 none;
+		display: block;
+		width: 100%;
+	}
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .bottom_cols > .how_to_upgrade {
+		border-bottom: 1px solid lightgray;
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .header_wrapper {
+		height: 270px;
+		padding-bottom: 0;
+	}
+
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .gp_slideshow {
+		float: left;
+	}
+
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .video_wrapper {
+		float: left;
+	}
+
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .customer_testimonial {
+		margin-left: 480px;
+	}
+
+}
+
+.custom_banners_admin_wrap #signup_wrapper {
+	position: absolute;
+	margin-right: 320px;
+	left: 980px;
+	right: auto;
+	top: 58px;
+	width: 344px;
+}
+
+.upgrade_left_col ul > li::before {
+	background-image: url('../img/check-mark.png');
+	content: " ";
+	position: absolute;
+	top: 5px;
+	left: 0;
+	z-index: 100;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.upgrade_left_col ul > li {
+	position: relative;
+	padding-left: 24px;			
+	margin-left: 19px;
+	font-size: 14px;
+	line-height: 1.5;
+	max-width: 450px;
+}
+.custom_banners_admin_wrap #signup_wrapper #mc_embed_signup {
+	padding-bottom: 15px;
+}	
+.sidebar_hello_t.hello_t_banner {
+	padding: 1px 20px;
+	border: 1px solid #DCDCDC;
+}	
+.sidebar_hello_t .whiteButton {
+	width: 100%;
+	box-sizing: border-box;
+}		
+.custom_banners_admin_wrap .upgrade_left_col {
+	margin: 20px auto 20px;
+	max-width: 600px;
+}
+
+.custom_banners_admin_wrap .upgrade_left_col {
+	padding: 0 60px 20px;
+	max-width: 560px;
+}
+
+.custom_banners_admin_wrap .upgrade_left_col h3 {
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+.custom_banners_admin_wrap .upgrade_left_col .all_features_link {
+	font-size: 14px;
+}
+.custom_banners_admin_wrap .bottom_cols {
+	border-top: 1px solid lightgray;
+	margin-top: 53px;
+}
+.custom_banners_admin_wrap .bottom_cols > div {
+	width: 49%;
+	display: inline-block;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.custom_banners_admin_wrap .how_to_upgrade {
+	border-right: 1px solid lightgray;
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+	.custom_banners_admin_wrap .gp_upgrade #signup_wrapper {
+		border-radius: 5px;
+		margin-top: 40px;
+	}
+	
+	.custom_banners_admin_wrap .gp_upgrade #signup_wrapper #mc_embed_signup {
+		min-height: 400px;
+		max-width: none;
+		margin-right: 0;
+		width:470px;
+	}
+	.custom_banners_admin_wrap .gp_upgrade #signup_wrapper .hello_t_banner {
+		min-height: 400px;
+		border-left: 0 none;
+		max-width: none;
+		width: 490px;
+	}
+		
+}
+	
+@media only screen and (max-width: 1530px) {
+
+	.custom_banners_admin_wrap #signup_wrapper {
+		left: initial;
+		position: relative;
+		margin-left: 0px;
+		margin-right: 0px;
+		right: auto;
+		top: 0;
+		margin-top: 20px;
+		padding-left: 0;
+		max-width: none;
+		min-width: 300px;
+		width: 100%;
+	}
+
+	.custom_banners_admin_wrap #signup_wrapper #mc_embed_signup {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+		max-width: 480px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+
+	.custom_banners_admin_wrap #signup_wrapper .hello_t_banner {
+		box-sizing: border-box;
+		float: left;
+		margin-top: 0;
+		max-width: 480px;
+		width: 100%;
+	}
+
+}
+
+.custom_banners_admin_wrap .upgrade_button {
+	padding: 12px 0 0 14px;
+}
+
+/* Upgrade to Pro link */
+#adminmenu .custom_banners_free_admin_menu ul.wp-submenu > li:last-child > a {
+	color: #3ce038;
+	font-weight: bold;
+}
+
+#adminmenu .custom_banners_free_admin_menu ul.wp-submenu > li:last-child > a.current {
+	color: inherit;
+}
+
+.custom_banners_admin_wrap .upgrade_button a {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52));
+	background:-moz-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+	background:-webkit-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+	background:-o-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+	background:-ms-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52',GradientType=0);
+	background-color:#b8e356;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 26px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #86ae47;
+}
+.custom_banners_admin_wrap .upgrade_button a:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356));
+	background:-moz-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+	background:-webkit-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+	background:-o-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+	background:-ms-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356',GradientType=0);
+	background-color:#a5cc52;
+}
+.custom_banners_admin_wrap .upgrade_button a:active {
+	position:relative;
+	top:1px;
+}
+
+.custom_banners_admin_wrap .whiteButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#969494;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:11px 24px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	width: 100%;
+	box-sizing: border-box;
+}
+.custom_banners_admin_wrap .whiteButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+.custom_banners_admin_wrap .whiteButton:active {
+	position:relative;
+	top:1px;
+}
+
+.custom_banners_admin_wrap #mc-show-coupon-codes {
+	margin-top: 32px;
+}
+
+.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .gp_slideshow .slide .caption {
+	background-color: #212121;
+	background-color: #212121b3;
+	color: white;
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	min-height: 40px;
+}
+.custom_banners_admin_wrap .gp_upgrade .upgrade_intro {
+	margin: 20px auto 20px;
+    max-width: 750px;
+	padding: 30px;
+    font-size: 18px;
+}
+
+
+.gp_slideshow {
+	border-right: 1px solid lightgray;
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	width: 480px;
+	max-height: 270px;
+	max-width: 100%;
+}
+
+.gp_slideshow ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 270px;
+	list-style: none;
+}
+
+.gp_slideshow ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 480px;
+  height: 270px;
+  background: #ccc;
+  text-align: center;
+  line-height: 270px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.custom_banners_admin_wrap .gp_upgrade .gp_upgrade_body .gp_slideshow .slide .caption {
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+
+.gp_slideshow a.control_prev,
+.gp_slideshow a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gp_slideshow a.control_prev:hover,
+.gp_slideshow a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+.gp_slideshow a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+.gp_slideshow a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+/* end upgrade page css */
+
+/* Old signup form css */
+.custom_banners_admin_wrap #mc_embed_signup .save_now {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+.custom_banners_admin_wrap #mc_embed_signup .gp_logo {
+	bottom: -8px;
+	background: purple none repeat scroll 0% 0%; 
+	left: -20px; 
+	margin: 1px 20px; 
+	padding: 20px; 
+	position: absolute; 
+	right: -20px; 
+	text-align: center; 
+}
+
+.custom_banners_admin_wrap #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+.custom_banners_admin_wrap #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+.custom_banners_admin_wrap #mc_embed_signup input {-webkit-appearance:none;}
+.custom_banners_admin_wrap #mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+.custom_banners_admin_wrap #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+.custom_banners_admin_wrap #mc_embed_signup input:focus {border-color:#333;}
+.custom_banners_admin_wrap #mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+.custom_banners_admin_wrap #mc_embed_signup .button:hover {background-color:#777;}
+.custom_banners_admin_wrap #mc_embed_signup .small-meta {font-size: 11px;}
+.custom_banners_admin_wrap #mc_embed_signup .nowrap {white-space:nowrap;}     
+.custom_banners_admin_wrap #mc_embed_signup .clear {clear:none; display:inline;}
+
+.custom_banners_admin_wrap #signup_wrapper #mc_embed_signup {
+	position: relative;
+	overflow: hidden;
+	border-bottom-left-radius: 5px;	
+	border-bottom-right-radius: 5px;	
+}
+.custom_banners_admin_wrap #mc_embed_signup h3 { 
+	color: purple;
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.custom_banners_admin_wrap #mc_embed_signup p.pitch {  
+	color: #454545;
+    margin-bottom: 20px;
+}
+.custom_banners_admin_wrap #mc_embed_signup .secure {
+	text-align: center;
+	font-size: 8px;
+	line-height: 16px;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+	text-transform: uppercase;
+	color: darkgray;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.custom_banners_admin_wrap #mc_embed_signup .secure img {
+	display: inline-block;
+	margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+
+.custom_banners_admin_wrap #mc_embed_signup .explain {
+	color: #808080;
+	width: auto;
+}
+.custom_banners_admin_wrap #mc_embed_signup label {
+	color: purple;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.custom_banners_admin_wrap #mc_embed_signup input.name,
+.custom_banners_admin_wrap #mc_embed_signup input.email {
+	display:block;
+	padding:8px 0;
+	margin:0 4% 10px 0;
+	text-indent:5px;
+	width:100%;
+	min-width:130px;
+}
+.custom_banners_admin_wrap #mc_embed_signup #mce-NAME {
+	margin-bottom: 20px;
+}
+.custom_banners_admin_wrap #mc_embed_signup .smallBlueButton {
+	margin: 10px 0;
+    width: 100%;
+}
+
+
+.custom_banners_admin_wrap #mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+.custom_banners_admin_wrap #mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+.custom_banners_admin_wrap #mc_embed_signup #mce-error-response {display:none;}
+.custom_banners_admin_wrap #mc_embed_signup #mce-success-response {color:#529214; display:none;}
+.custom_banners_admin_wrap #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}		
+.custom_banners_admin_wrap #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+.custom_banners_admin_wrap #mc_embed_signup{    
+			background-color: white;
+			border: 1px solid #DCDCDC;
+			clear: left;
+			color: #008000;
+			font: 14px Helvetica,Arial,sans-serif;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			max-width: 800px;
+			padding: 15px 12px 5px;
+}
+.custom_banners_admin_wrap #mc_embed_signup form{padding: 10px}
+
+.custom_banners_admin_wrap #mc_embed_signup .special-offer {
+	color: #808080;
+	margin: 0;
+	padding: 0 0 3px;
+	text-transform: uppercase;
+}
+.custom_banners_admin_wrap #mc_embed_signup .button {
+  background: #5dd934;
+  background-image: -webkit-linear-gradient(top, #5dd934, #549e18);
+  background-image: -moz-linear-gradient(top, #5dd934, #549e18);
+  background-image: -ms-linear-gradient(top, #5dd934, #549e18);
+  background-image: -o-linear-gradient(top, #5dd934, #549e18);
+  background-image: linear-gradient(to bottom, #5dd934, #549e18);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  line-height: 1.5;
+  height: auto;
+  margin-top: 7px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.custom_banners_admin_wrap #mc_embed_signup .button:hover {
+  background: #65e831;
+  background-image: -webkit-linear-gradient(top, #65e831, #5dd934);
+  background-image: -moz-linear-gradient(top, #65e831, #5dd934);
+  background-image: -ms-linear-gradient(top, #65e831, #5dd934);
+  background-image: -o-linear-gradient(top, #65e831, #5dd934);
+  background-image: linear-gradient(to bottom, #65e831, #5dd934);
+  text-decoration: none;
+}
+.custom_banners_admin_wrap #signup_wrapper {
+	max-width: 800px;
+}
+@media only screen and (max-width: 1075px) {
+	.custom_banners_admin_wrap #signup_wrapper {
+		position: static;
+		margin: 30px 0 0 -10px;
+		width: 300px;
+	}
+}
+.custom_banners_admin_wrap #signup_wrapper .u_to_p
+{
+	font-size: 10px;
+	margin: 0;
+	padding: 2px 0 0 3px;
+	text-align: center;	
+}

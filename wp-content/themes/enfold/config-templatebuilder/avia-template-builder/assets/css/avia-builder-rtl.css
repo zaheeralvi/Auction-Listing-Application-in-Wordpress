@@ -1,0 +1,70 @@
+/* 
+	Apply fixes needed for support of RTL languages in backend
+
+    Created on : 22.01.2018, 16:31:10
+    Author     : www.kriesi.at
+
+	@since:		4.2.2
+*/
+
+/*		General Layout		*/
+.rtl div .avia_inner_shortcode img{
+	margin: 0 0 0 10px;
+}
+
+.rtl .avia-tab-title-container a,
+.rtl .avia-modal-tab-titles a{
+	float: right;
+}
+
+.rtl .avia-hotkey-info{
+	left: 14px;
+	right: auto;
+}
+
+.rtl .avia-modal .av-multi-checkbox .avia-name-description > label{
+	padding: 0 30px 0 0;
+}
+
+
+/*		columns		*/
+.rtl div.avia_layout_column,
+.rtl div.avia_layout_section,
+.rtl div.avia-highlight{
+	float: right;
+}
+
+.rtl div.avia_layout_column.avia_layout_tab{
+	float: left;
+	width: 100%;
+}
+
+.rtl div.avia_layout_column.avia-first-col{
+	clear: right;
+}
+
+/*		Tab section		*/
+.rtl .av-admin-section-tab-move-handle{
+	left: 10px;
+}
+
+
+/*		Table			*/
+.rtl .avia-table-builder-wrapper .avia-table-builder-add-buttons{
+	left: 25px;
+	right: auto;
+}
+
+.rtl .avia-table .avia-table-content select{
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+.rtl .avia-table .avia-table-cell-style select{
+	float: left;
+	margin: 0;
+}
+
+.rtl .avia-table-cell.avia-center-col select{
+	float: none;
+}

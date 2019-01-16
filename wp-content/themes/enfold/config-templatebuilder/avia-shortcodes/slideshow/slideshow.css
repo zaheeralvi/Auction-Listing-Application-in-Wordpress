@@ -1,0 +1,355 @@
+
+/* ======================================================================================================================================================
+Slideshow
+====================================================================================================================================================== */
+.avia-slideshow{position: relative; margin:50px 0; width:100%; clear: both; overflow: hidden;}
+.flex_column .avia-slideshow{ margin:20px 0; }
+.flex_column .avia-slideshow.avia-builder-el-no-sibling{margin-top:0px;}
+
+.avia-slideshow-inner{padding:0; margin: 0; position: relative; overflow: hidden; width:100%;}
+#top .av-default-height-applied .avia-slideshow-inner{height:0px;}
+.avia-slideshow li{padding:0; margin: 0; list-style-type: none; list-style-position: outside; position: absolute; visibility: hidden; z-index: 1; top:0; left:0; width:100%; clear:both; opacity: 0; overflow: hidden;}
+.avia-slideshow li:first-child{position: relative; visibility: visible; z-index: 3;}
+.avia-slideshow li img{display:block; width:100%; margin: 0 auto; border-radius: 3px; position: relative;}
+.flex_cell_inner .avia-slideshow li img{border-radius: 0;}
+.avia-slideshow.image_no_stretch li img{width:auto;}
+.avia-slideshow li>p{margin:0;}
+
+/* carousel */
+.avia-slideshow-carousel{overflow: hidden;}
+.avia-slideshow-carousel ul{transition: all 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000); white-space: nowrap;}
+.avia-slideshow-carousel ul *{white-space: normal;}
+.avia-slideshow-carousel li{position: relative;visibility: visible;opacity: 1;vertical-align: top;}
+
+#top .avia-slideshow-arrows a{
+display: block;
+text-decoration: none;
+color: #fff;
+visibility: visible;
+position: absolute;
+width:60px;
+text-align: center;
+height: 60px;
+line-height: 62px;
+font-size: 25px;
+top:50%;
+margin:-30px 15px 0;
+z-index: 99;
+overflow: hidden;
+text-indent: -600%;
+}
+
+#top .avia-slideshow-arrows a.next-slide{
+right:0;
+}
+
+.avia-slideshow-arrows a:before{
+visibility: visible;
+display: block;
+position: absolute;
+z-index: 100;
+background: #aaa;
+background: rgba(0,0,0,0.3);
+top:0;
+left:0;
+right:0;
+bottom:0;
+border-radius: 3px;
+text-align: center;
+line-height: 62px;
+color:inherit;
+}
+
+
+.prev-slide:before{
+text-indent: -2px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+.next-slide:before{
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+text-indent: 0px;
+}
+
+.avia-slideshow-dots{position: absolute; z-index: 200; width:100%; bottom:0; text-align: center; left: 0; height:0px;}
+.avia-slideshow-dots a{display: inline-block; height:13.5px; width:13.5px; border-radius: 14px; background: #000; opacity: 0.6; filter:alpha(opacity=60); text-indent: 100px; overflow: hidden; margin:0 1px; padding: 7px;position: relative; bottom: 33px; -webkit-backface-visibility: hidden;}
+.avia-slideshow-dots a.active, .avia-slideshow-dots a:hover{opacity: 0.8; filter:alpha(opacity=80); background: #fff;}
+
+.avia-caption{position: absolute; z-index: 10; bottom:17px; left:17px; padding:10px 20px; color:#fff; border-radius: 3px; }
+.avia-slideshow .avia-caption .avia-caption-title{ color:#fff; }
+
+.js_active .avia-slideshow li:first-child{visibility: hidden;}
+.js_active .avia-slideshow-carousel li:first-child{visibility: visible;}
+
+/* hide controls on desktop */
+.avia_desktop .av_slideshow.avia-slideshow .avia-slideshow-controls a{ opacity: 0; filter:alpha(opacity=0);  }
+.avia_desktop .av_slideshow.avia-slideshow:hover .avia-slideshow-controls a{ opacity: 0.6; filter:alpha(opacity=60);  }
+.avia_desktop .av_slideshow.avia-slideshow:hover .avia-slideshow-controls a:hover{ opacity: 0.8; filter:alpha(opacity=80);  }
+
+/*various control stylings*/
+#top .av-control-hidden .avia-slideshow-controls{display: none;}
+#top .av-control-minimal .avia-slideshow-arrows a:before{border:2px solid #fff; background: transparent; line-height: 60px;}
+#top .av-control-minimal .avia-slideshow-dots a{border:2px solid #fff; background: transparent; padding: 5px;}
+#top .av-control-minimal .avia-slideshow-dots a.active{background: #fff;}
+
+#top .av-control-minimal-dark .avia-slideshow-arrows a{ color: #000; }
+#top .av-control-minimal-dark .avia-slideshow-arrows a:before{border-color: #000;}
+#top .av-control-minimal-dark .avia-slideshow-dots a{border-color: #000;}
+#top .av-control-minimal-dark .avia-slideshow-dots a.active{background: #000;}
+
+#top .scroll-down-link.av-control-minimal-dark{color:#000;}
+#top .scroll-down-link.av-custom-scroll-down-color{ text-shadow: none; }
+
+
+/*avia-small-width-slider*/
+
+#top .avia-small-width-slider .avia-slideshow-arrows a{
+width:30px;
+height:30px;
+margin: -15px 5px 0;
+line-height: 32px;
+font-size: 15px;
+}
+
+#top .avia-small-width-slider .avia-slideshow-arrows a:before{ line-height: 32px; }
+
+
+#top .avia-super-small-width-slider .avia-slideshow-dots{display:none;}
+
+
+/*video slides*/
+
+#top .av-video-slide , #top .av-video-slide .avia-slide-wrap{width:100%; height:100%; position: absolute; overflow: hidden;}
+#top .av-video-slide .mejs-poster{width:100% !important; height: 100% !important;  background-size: cover; background-position: center center;}
+#top .av-video-slide .mejs-poster img{display:none;}
+#top .av-video-slide .avia-iframe-wrap{padding:0; height:100%; margin: 0;}
+#top .av-video-slide iframe, #top .av-video-slide embed, #top .av-video-slide object, #top .av-video-slide video{max-width:none; max-height:none; width:100%; height:100%; position: absolute;}
+#top .av-video-slide .caption_fullwidth{top: 0; left: 0; right: 0; bottom: 40px; }
+#top .av-video-slide.av-hide-video-controls .caption_fullwidth{ bottom:0px;}
+#top .av-video-slide .mejs-container{ height: 100% !important; width: 100% !important; position: absolute;}
+#top .av-video-slide .me-plugin{width:100%; height:100%;}
+span.mejs-offscreen { display: none!important; }
+
+
+#top .avia-fullscreen-slider .av-video-slide.av-video-service-vimeo iframe{
+	-webkit-transform: 	scale(1.2);
+	-ms-transform: 		scale(1.2);
+	transform: 			scale(1.2);
+}
+
+
+
+.avia_video{z-index: 8;}
+.mejs-controls{ z-index: 9; }
+#top .av-video-slide.av-video-service-vimeo .mejs-controls,
+.av-force-resize .av-video-service-youtube .avia_video,
+.av-hide-video-controls .mejs-controls{display: none !important;}
+
+.av-video-slide.slide-1 .mejs-mediaelement{opacity: 0;}
+.av-video-slide .mejs-mediaelement{height:100%;}
+#top .av-video-slide .mejs-overlay-button{display: none;}
+#top .av-video-slide .avia-slide-wrap, #top .av-video-slide iframe{ background: #000; } 
+
+
+#top .av-video-slide.av-video-4-3-stretch iframe, #top .av-video-slide.av-video-4-3-stretch embed, #top .av-video-slide.av-video-4-3-stretch object, #top .av-video-slide.av-video-4-3-stretch video {
+height: 270%;
+}
+
+
+
+/*blocks the option to click the video. play/pause events get attached to the av click overlay instead*/
+#top .av-section-with-video-bg .av-section-video-bg:after, .av-click-overlay{ 
+content: ".";
+position: absolute;
+text-indent: -200px;
+overflow: hidden;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index: 11;
+
+/*this allows to toggle to work in IE. its a hack since the browser does not accept click events on elements without bg. */
+filter: alpha(opacity=0); opacity: 0; background: #000;
+}
+
+.av-click-overlay{z-index: 9; bottom:30px;} /*z index 9 to move it behind caption*/
+.av-hide-video-controls .av-click-overlay {bottom:0;}
+.av-video-service-vimeo .av-click-overlay {bottom:42px;}
+.av-video-service-youtube .av-click-overlay {bottom:36px;}
+
+.av-video-stretch.av-video-service-vimeo .av-click-overlay, .av-video-stretch.av-video-service-youtube .av-click-overlay{bottom:0;}
+
+
+/*video play/pause icon*/
+
+.avia_playpause_icon{
+position: absolute;
+height:100px;
+width:100px;
+margin:-50px 0 0 -50px;
+background: #000;
+background: rgba(0,0,0,0.4);
+border-radius: 3px;
+top: 50%;
+left: 50%;
+z-index: 50;
+display:none;
+-webkit-transform: scale(0.7);
+-ms-transform: scale(0.7);
+transform: scale(0.7);
+}
+
+.avia_playpause_icon.av-play, .avia_playpause_icon.av-pause{
+display:block !important;
+}
+
+#top .avia_playpause_icon:before{
+top:0;
+left:0;
+right:0;
+bottom:0;
+position: absolute;
+color:#fff;
+line-height: 100px;
+text-align: center;
+font-size: 40px;
+}
+
+.avia_transform .avia_playpause_icon.av-play, .avia_transform .avia_playpause_icon.av-pause{
+-webkit-animation: avia_appear_short 1.7s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* Safari 4+ */
+animation:         avia_appear_short 1.7s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* IE 10+ */
+opacity: 0;							 
+}
+
+.avia_playpause_icon.av-pause{
+
+}
+
+/*slideshow on mobile*/
+.av-fallback-message{text-align: center; position: absolute; z-index: 1000; top:45%; width:100%; left:0;}
+.av-fallback-message span{display: inline-block; border:1px solid #e1e1e1; padding:10px;background: #fff;}
+
+
+
+/*slideshow captions Fullscreen slider*/
+.caption_fullwidth{position: absolute; right:0; bottom:0; left:0; top:0; z-index: 10;}
+
+.slideshow_caption{
+z-index: 100;
+width:42%;
+position: absolute;
+bottom: 0;
+top:auto;
+height:100%;
+display:block;
+text-decoration: none;
+padding:50px;
+}
+
+div .slideshow_caption h2{text-transform: uppercase;}
+div .slideshow_caption, div .slideshow_caption a, div .slideshow_caption a:hover, div .slideshow_caption h2, div .slideshow_caption h2 .special_amp, div .slideshow_caption strong , div .slideshow_caption h2 strong{ color: #fff; }
+
+
+
+.slideshow_inner_caption{
+position: relative;
+display: table;
+height:100%;
+width:100%;
+}
+
+.slideshow_align_caption{
+display:table-cell;
+vertical-align: middle;
+position: relative;
+}
+
+/*caption frame*/
+.avia-caption-content{line-height: 1.3em;}
+.avia-caption-content p {margin:15px 0;}
+
+.caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
+.avia-caption .avia-caption-content p, .avia-caption .avia-caption-title{
+background: #000;
+filter: alpha(opacity = 80);
+background: rgba(0, 0, 0, 0.5);
+display:inline-block;
+margin:0 0 1px 0;
+padding:10px 15px;
+}
+
+#top .avia-caption-content .wp-smiley{display:none;}
+#top .avia-caption-content a{text-decoration: underline;}
+#top .avia-caption-content a:hover{text-decoration: none;}
+
+
+.avia_transform .av_slideshow_full .avia-caption-title{
+
+}
+
+.caption_left .slideshow_caption {left:0; }
+.caption_right .slideshow_caption{ right:0;	}
+.caption_right .slideshow_caption .slideshow_inner_caption{ float:right; }
+.caption_bottom .slideshow_caption {left:0; width:100%; bottom:0; height:auto;}
+#top div .caption_center .slideshow_caption { left:0; width: 100%; text-align: center;}
+
+.caption_bottom .slideshow_caption .slideshow_inner_caption{
+display: block;
+height:auto;
+bottom:0;
+position: absolute;
+padding: 0 50px;
+width:100%;
+left:0;
+}
+
+
+.caption_bottom .slideshow_caption .slideshow_inner_caption .slideshow_align_caption{
+padding:20px 0;
+display: block;
+}
+
+/*button*/
+
+#top .avia-slideshow-button{border-radius: 3px; text-transform: uppercase; padding:15px 16px; display: inline-block; margin-top:20px; text-decoration: none; font-weight: bold;}
+
+#top .avia-slideshow-button.avia-color-light{ padding:12px 16px;  background-color: rgba(0,0,0,0.2); }
+#top .avia-slideshow-button.avia-color-dark{  padding:12px 16px;  background-color: rgba(255,255,255,0.1);}
+
+
+
+.avia-multi-slideshow-button{min-width: 140px;}
+.avia-multi-slideshow-button.avia-slideshow-button{margin-right:20px;}
+.avia-multi-slideshow-button.avia-slideshow-button-2{margin-right:0px;}
+
+
+
+/*afterload video*/
+#top .av-video-slide .avia-slide-wrap{
+	background-position: center center;
+	background-size: cover;
+}
+
+#top .av-video-lazyload .av-click-to-play-overlay{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#top .av-video-lazyload .av-click-to-play-overlay .avia_playpause_icon{
+	display: block;
+	-webkit-transition: opacity 0.4s ease-out;
+	transition: 		opacity 0.4s ease-out;
+}
+
+#top .av-video-lazyload .av-click-to-play-overlay:hover .avia_playpause_icon{
+	opacity: 0.7;
+}
+
+

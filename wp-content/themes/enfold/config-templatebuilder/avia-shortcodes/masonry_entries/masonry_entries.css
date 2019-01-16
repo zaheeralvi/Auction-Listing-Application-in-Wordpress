@@ -1,0 +1,519 @@
+/* ======================================================================================================================================================
+Masonry Grid
+====================================================================================================================================================== */
+
+.av-masonry{
+position: relative;
+overflow: hidden;
+clear:both;
+}
+
+.av-masonry-container{
+width:100.4%;
+float:left;
+clear:both;
+position: relative;
+}
+
+.av-masonry-entry{
+position: relative;
+display: block;
+width:24.90%;
+float:left;
+clear: none;
+text-decoration: none;
+visibility: hidden;
+opacity: 0;
+}
+
+#top .masonry-no-border{border-top:none;}
+
+.av-masonry-entry.av-landscape-img{
+width:49.80%;
+}
+
+
+.av-masonry-col-2 .av-masonry-entry{width:49.80%;}
+.av-masonry-col-2 .av-masonry-entry.av-landscape-img{width:99.50%;}
+
+.av-masonry-col-3 .av-masonry-entry{width:33.3%}
+.av-masonry-col-3 .av-masonry-entry.av-landscape-img{width:66.6%}
+
+.av-masonry-col-4 .av-masonry-entry{}
+.av-masonry-col-4 .av-masonry-entry.av-landscape-img{}
+
+.av-masonry-col-5 .av-masonry-entry{width:19.90%;}
+.av-masonry-col-5 .av-masonry-entry.av-landscape-img{width:39.80%;}
+
+.av-masonry-col-6 .av-masonry-entry{width:16.6%;}
+.av-masonry-col-6 .av-masonry-entry.av-landscape-img{width:33.2%;}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+
+.responsive.av-no-preview #top .av-medium-columns-4 .av-masonry-entry{width:24.90%;}
+.responsive.av-no-preview #top .av-medium-columns-3 .av-masonry-entry{width:33.3%;}
+.responsive.av-no-preview #top .av-medium-columns-2 .av-masonry-entry{width:49.80%;}
+.responsive.av-no-preview .av-no-preview .av-medium-columns-1 .av-masonry-entry{width:100%;}
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.responsive.av-no-preview #top .av-small-columns-4 .av-masonry-entry{width:24.90%;}
+.responsive.av-no-preview #top .av-small-columns-3 .av-masonry-entry{width:33.3%;}
+.responsive.av-no-preview #top .av-small-columns-2 .av-masonry-entry{width:49.80%;}
+.responsive.av-no-preview #top .av-small-columns-1 .av-masonry-entry{width:100%;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+.responsive.av-no-preview #top .av-mini-columns-4 .av-masonry-entry{width:24.90%;}
+.responsive.av-no-preview #top .av-mini-columns-3 .av-masonry-entry{width:33.3%;}
+.responsive.av-no-preview #top .av-mini-columns-2 .av-masonry-entry{width:49.80%;}
+.responsive.av-no-preview #top .av-mini-columns-1 .av-masonry-entry{width:100%;}
+}
+
+
+
+
+
+.av-masonry-outerimage-container{
+overflow: hidden;
+}
+
+.av-masonry-outerimage-container, .av-masonry-image-container {
+position: relative;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: 1;
+}
+
+.av-masonry-image-container{
+text-align: center;
+background-size: cover;
+background-position: center center;
+}
+
+
+
+.av-masonry-image-container img{ display:block; margin: 0 auto;}
+
+#top .av-inner-masonry{overflow: hidden; background-color: transparent;}
+
+.av-masonry-entry .av-inner-masonry-content{
+padding:20px;
+z-index: 2;
+position: relative;
+width:100%;
+}
+
+.av-masonry-entry .avia-arrow{border:none; top: -5px;}
+.av-masonry-item-no-image .avia-arrow{display: none;}
+
+.av-masonry-entry .av-masonry-entry-title{
+line-height: 1.3em;
+margin:0;
+font-size: 15px;
+}
+
+.av-masonry-entry .av-masonry-entry-title + .av-masonry-entry-content{
+padding-top:4px;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.av-masonry-date, .av-masonry-text-sep, .av-masonry-author{font-size: 11px;}
+.av-masonry-text-sep{padding: 0 5px;}
+.av-masonry-text-sep.text-sep-author, .av-masonry-author{display:none;}
+
+/*items loaded*/
+
+.av-masonry-entry.av-masonry-item-loaded{
+opacity: 1;
+visibility: visible;
+}
+
+.avia_desktop.avia_transform3d .av-masonry-animation-active .av-masonry-entry{
+-webkit-perspective: 600px;
+-moz-perspective: 600px;
+perspective: 600px;
+}
+
+.avia_desktop.avia_transform3d .av-masonry-animation-active .av-masonry-entry.av-masonry-item-loaded .av-inner-masonry{
+-webkit-animation: avia_msonry_show 0.8s 1 cubic-bezier(0.175, 0.885, 0.320, 1.075); /* Safari 4+ */
+animation:         avia_msonry_show 0.8s 1 cubic-bezier(0.175, 0.885, 0.320, 1.075); /* IE 10+ */
+}
+
+
+
+
+/*gap variations between elements: no, 1px and large*/
+
+.av-large-gap.av-masonry{ padding:15px 0 0 15px; }
+
+.av-no-gap.av-fixed-size  .av-masonry-entry .av-inner-masonry{  position: absolute; top:0px; left:-1px; right: 0px; bottom:-2px; }
+.av-1px-gap.av-fixed-size .av-masonry-entry .av-inner-masonry{  position: absolute; top:0px; left:0px; right: 1px; bottom:1px; }
+.av-large-gap.av-fixed-size .av-masonry-entry .av-inner-masonry{position: absolute; top:0px; left:0px; right: 15px; bottom:15px; }
+
+.av-no-gap.av-flex-size .av-masonry-entry .av-inner-masonry{  position: relative; }
+.av-1px-gap.av-flex-size .av-masonry-entry .av-inner-masonry{ position: relative; margin-right:1px; margin-bottom:1px; }
+.av-large-gap.av-flex-size .av-masonry-entry .av-inner-masonry{ position: relative; margin-right:15px; margin-bottom:15px; }
+
+
+
+
+/*firefox 1px gap fix*/
+.avia-mozilla .av-1px-gap.av-flex-size .av-masonry-entry .av-inner-masonry{ margin-bottom:2px; }
+
+
+/*flex size*/
+
+.av-flex-size .av-masonry-image-container{background-image: none !important; }
+
+/*fixed sized masonry (aka perfect grid)*/
+.av-fixed-size .av-masonry-image-container, .av-fixed-size .av-masonry-outerimage-container{position: absolute;}
+.av-fixed-size .av-masonry-image-container img{display: none;}
+.av-fixed-size .av-masonry-entry .av-inner-masonry-sizer{ width:100%; padding-bottom:80%; z-index: 1; }
+.av-fixed-size .av-masonry-entry.av-landscape-img .av-inner-masonry-sizer{ padding-bottom:40%;}
+.av-fixed-size .av-masonry-entry.av-portrait-img .av-inner-masonry-sizer{ padding-bottom:160%;}
+.av-fixed-size .av-masonry-entry.av-portrait-img.av-landscape-img  .av-inner-masonry-sizer{ padding-bottom:80%;}
+
+#top .av-fixed-size .av-masonry-entry.av-masonry-item-no-image .av-inner-masonry-content,
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content{ display: table; position: relative; height: 100%;width:100%; bottom:0; table-layout: fixed; }
+#top .av-fixed-size .av-masonry-entry.av-masonry-item-no-image .av-inner-masonry-content-pos,
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content-pos{display:table-cell;  vertical-align: middle; text-align: center;}
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry {
+    background: transparent;
+}
+
+
+
+.av-fixed-size .av-masonry-entry .av-inner-masonry-content, 
+.av-caption-on-hover .av-masonry-item-with-image.av-masonry-entry .av-inner-masonry-content,
+.av-flex-size.av-caption-on-hover-hide .av-masonry-entry.av-masonry-item-with-image  .av-inner-masonry-content
+{
+position: absolute;
+bottom: -1px; /*fixes hover bug that lets 1px img shine through at bottom when font is big*/
+}
+
+/*overlay styling*/
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content{
+background: rgba(0,0,0,0.35);
+}
+
+#top .av-caption-style-overlay.av-hover-overlay- .av-masonry-item-with-image .av-inner-masonry-content{
+background: transparent;
+}
+
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content *,
+#top .av-caption-style-overlay .av-masonry-item-with-image ins:before,
+#top #wrap_all .av-caption-style-overlay .av-masonry-item-with-image del{
+color:#fff;
+}
+
+
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content .avia-arrow, 
+#top .av-caption-style-overlay .av-masonry-item-with-image .av-inner-masonry-content .av-icon-display{
+display: none;
+}
+
+#top #wrap_all .av-caption-style-overlay.av-flex-size .av-masonry-entry.av-masonry-item-with-image .av-inner-masonry-content{ 
+	position: absolute; top:-2px; left:-2px; right: -2px; bottom:-2px; display:block; height: auto; width:auto;
+}
+
+#top .av-caption-style-overlay.av-flex-size .av-masonry-entry.av-masonry-item-with-image .av-inner-masonry-content-pos{
+	display:table; height: 100%; width:100%;
+}
+
+#top .av-caption-style-overlay.av-flex-size .av-masonry-entry.av-masonry-item-with-image .av-inner-masonry-content-pos-content{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#top .av-caption-style-overlay .av-masonry-entry .av-masonry-entry-title{
+font-size: 1.5em;
+}
+
+
+/*masonry orientation*/
+.av-fixed-size.av-orientation-landscape-large  .av-masonry-entry .av-inner-masonry-sizer{ width:100%; padding-bottom:50%;  }
+.av-fixed-size.av-orientation-square .av-masonry-entry .av-inner-masonry-sizer{ width:100%; padding-bottom:100%;  }
+.av-fixed-size.av-orientation-portrait .av-masonry-entry .av-inner-masonry-sizer{ width:100%; padding-bottom:130%;  }
+.av-fixed-size.av-orientation-portrait-large .av-masonry-entry .av-inner-masonry-sizer{ width:100%; padding-bottom:150%;  }
+
+
+
+
+/*hover effect*/
+#top .av-masonry-entry:hover{text-decoration: none; }
+
+.av-masonry-image-container, .av-inner-masonry-content, .av-masonry-pagination{
+-webkit-transition: all 0.4s ease-in-out;
+transition: 		all 0.4s ease-in-out;
+}
+
+.avia_desktop .av-hover-overlay-active .av-masonry-image-container{opacity: 0.7;}
+.avia_desktop .av-hover-overlay-active .av-masonry-entry:hover .av-masonry-image-container,
+.avia_desktop .av-hover-overlay-active.av-caption-style-overlay .av-masonry-entry .av-masonry-image-container
+{ opacity: 1;}
+.avia_desktop .av-masonry-entry:hover .av-masonry-image-container{
+-webkit-transform: 	scale(1.05,1.05);
+transform: 			scale(1.05,1.05);
+}
+
+
+.avia_desktop .av-caption-on-hover .av-masonry-item-with-image .av-inner-masonry-content{opacity: 0; filter:alpha(opacity=00);}
+.avia_desktop .av-caption-on-hover .av-masonry-item-with-image.av-masonry-entry:hover .av-inner-masonry-content{opacity: 1; filter:alpha(opacity=100);}
+
+
+.avia_desktop .av-caption-on-hover-hide .av-masonry-item-with-image .av-inner-masonry-content{opacity: 1; filter:alpha(opacity=100);}
+.avia_desktop .av-caption-on-hover-hide .av-masonry-item-with-image.av-masonry-entry:hover .av-inner-masonry-content{opacity: 0; filter:alpha(opacity=00);}
+
+
+
+.avia_desktop .av-inner-masonry-content{ /*fixes flickering issue when caption/excerpt is visible by default and sorting is activated . may also try to replace it with -webkit-transform-style: preserve-3d;*/
+-webkit-backface-visibility:hidden;
+}
+
+.avia_desktop.avia_transform3d .av-caption-on-hover.av-caption-style- .av-masonry-entry.av-masonry-item-with-image .av-inner-masonry-content,
+.avia_desktop.avia_transform3d .av-caption-on-hover-hide.av-caption-style- .av-masonry-entry.av-masonry-item-with-image:hover .av-inner-masonry-content{
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transform-origin: center bottom;
+-moz-transform-origin: center bottom;
+transform-origin: center bottom;
+-webkit-transform: rotateX(120deg);
+transform: rotateX(120deg);
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+.avia_desktop.avia_transform3d .av-caption-on-hover-hide.av-caption-style- .av-masonry-entry.av-masonry-item-with-image .av-inner-masonry-content,
+.avia_desktop.avia_transform3d .av-caption-on-hover.av-caption-style- .av-masonry-entry.av-masonry-item-with-image:hover .av-inner-masonry-content{
+-webkit-transform: 	rotateX(0deg);
+transform: 			rotateX(0deg);
+-webkit-transform-origin: center bottom;
+-moz-transform-origin: center bottom;
+transform-origin: center bottom;
+}
+
+
+.avia_desktop.avia_transform3d .av-masonry-entry:hover .av-icon-display{
+-webkit-transform: 	rotateY(180deg);
+transform: 			rotateY(180deg);
+border-color: transparent;
+}
+
+/*need to make sure that the scale transform doesnt mess up the image*/
+.avia_desktop.avia_transform3d .av-masonry-image-container{
+-webkit-perspective: 1000px;
+-webkit-backface-visibility: hidden;
+}
+
+
+
+
+/*masonry sorting*/
+
+.av-masonry-sort{ text-align: center; padding:20px 40px; visibility: hidden; overflow: hidden; }
+#top div.container .av-masonry .av-masonry-sort {
+  padding: 0px;
+  background: transparent;
+  line-height: 30px;
+  margin-bottom:15px;
+  font-size: 0.9em;
+}
+
+.av-large-gap .av-masonry-sort{}
+.av-masonry-sort a{text-decoration: none;}
+.av-masonry-sort .avia_hide_sort{display: none;}
+.av-sort-by-term > * { display: inline-block; }
+.av-no-gap  .av-masonry-sort, .av-1px-gap  .av-masonry-sort{margin:0 0 1px 0;}
+.av-large-gap .av-masonry-sort{margin:0 15px 15px 0;}
+.avia-term-count{display: none; }
+
+#top .av-sort-yes-tax{line-height: 50px}
+#top .av-sort-yes-tax .av-sort-by-term, #top .av-sort-yes-tax .sort_by_cat{float: right}
+#top .av-current-sort-title{float: left; font-weight: normal; font-size: 26px;}
+
+/*masonry pagination*/
+.av-masonry-pagination{
+clear: both;
+z-index: 2;
+bottom: 20px;
+right:20px;
+padding:20px;
+display:block;
+}
+
+#top .av-masonry-load-more{
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 1px;
+font-size: 13px;
+visibility: hidden;
+opacity: 0;
+overflow: hidden;
+}
+
+#top .av-masonry-load-more.av-masonry-no-more-items {
+opacity: 0 !important;
+height: 0px;
+padding: 0px;
+filter:alpha(opacity=00);
+}
+
+
+#top .av-masonry-load-more:hover{ letter-spacing: 0px; }
+.av-no-gap .av-masonry-load-more{margin:1px 0 0 0; float: left; width: 100%;}
+.av-large-gap .av-masonry-pagination{margin:0 15px 15px 0;}
+.av-masonry-pagination .pagination{padding:5px;}
+.av-masonry-pagination .pagination-meta { line-height: 30px; }
+
+
+/*masonry post types and variations*/
+/*product*/
+.av-masonry-entry.sale .av-masonry-entry-title{ padding-right:48px;}
+#top .av-masonry-entry.type-product .av-masonry-image-container{-webkit-transform: scale(1);transform:scale(1); }
+#top .av-masonry-entry .price, #top .av-masonry-entry .price span, #top .av-masonry-entry del, #top .av-masonry-entry ins {font-size: 14px;}
+#top .av-masonry-entry .onsale{ top:20px; right:20px;}
+
+#top .av-caption-style-overlay .av-masonry-entry .onsale{ top:0px; right:0px; border-radius: 0;}
+#top .av-caption-style-overlay .av-masonry-entry.sale .av-masonry-entry-title{ padding-right:0px;}
+
+#top .av-masonry-entry .av-inner-masonry .av-masonry-overlay{opacity: 0; filter:alpha(opacity=0); width:100%; z-index: 10; position: absolute; top:0; left:0; right:0; bottom:0;}
+#top .av-masonry-entry:hover .av-inner-masonry .av-masonry-overlay{  opacity: 1; filter:alpha(opacity=100);  }
+
+
+/*post types*/
+#top .av-icon-display.av-masonry-media{
+position: absolute;
+left: 50%;
+margin-left: -30px;
+top: -75px;
+opacity: 0.7;
+filter:alpha(opacity=70);
+}
+
+#top .av-masonry-entry:hover .av-icon-display.av-masonry-media{
+opacity: 1; filter:alpha(opacity=100);
+-webkit-transform: 	rotateY(0deg);
+transform: 			rotateY(0deg);
+}
+
+
+#top .av-masonry-entry.format-quote .av-icon-display{
+position: absolute;
+z-index: -1;
+border: none;
+background: rgba(0, 0, 0, 0);
+opacity: 0.1;
+filter:alpha(opacity=10);
+bottom: -20px;
+left: 0;
+font-size: 50px;
+line-height: 100px;
+width: 100px;
+}
+
+#top div .av-masonry-entry.format-quote:hover .av-icon-display{
+-webkit-transform: 	rotateY(0deg);
+transform: 			rotateY(0deg);
+opacity: 0.3; filter:alpha(opacity=30);
+}
+
+
+
+/*masonry within columns/sections */
+#top .container .av-masonry{background: transparent;}
+#top .container .av-masonry.av-large-gap {
+  padding: 0;
+  width: 102%;
+  width: calc(100% + 15px);
+}
+
+/*masonry grayscale/desat effect/blur */
+
+#top .av-hover-overlay-grayscale .av-masonry-entry .av-masonry-image-container{
+-webkit-filter:grayscale(1);
+		filter:grayscale(1);
+}
+
+#top .av-hover-overlay-grayscale .av-masonry-entry:hover .av-masonry-image-container{
+-webkit-filter:grayscale(0);
+		filter:grayscale(0);
+}
+
+#top .av-hover-overlay-desaturation .av-masonry-image-container{
+-webkit-filter:saturate(30%);
+		filter:saturate(30%);
+}
+
+#top .av-hover-overlay-desaturation .av-masonry-entry:hover .av-masonry-image-container{
+-webkit-filter:saturate(100%);
+		filter:saturate(100%);
+}
+
+#top .av-hover-overlay-bluronhover .av-masonry-image-container{
+-webkit-filter:blur(0px);
+		filter:blur(0px);
+}
+
+#top .av-hover-overlay-bluronhover .av-masonry-entry:hover .av-masonry-image-container{
+-webkit-filter:blur(10px);
+		filter:blur(10px);
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1800px){
+ .responsive.html_stretched .av-masonry-col-flexible .av-masonry-entry,
+ .responsive.html_av-framed-box .av-masonry-col-flexible .av-masonry-entry{width:16.6%;}
+ .responsive.html_stretched .av-masonry-col-flexible .av-masonry-entry.av-landscape-img,
+ .responsive.html_av-framed-box .av-masonry-col-flexible .av-masonry-entry.av-landscape-img{width:33.2%;}
+}
+
+@media only screen and (min-width: 989px) and (max-width: 1340px) {
+.responsive .av-masonry-col-flexible .av-masonry-entry{width:33.3%;}
+.responsive .av-masonry-col-flexible .av-masonry-entry.av-landscape-img{width:66.6%;}
+}
+
+@media only screen and (max-width: 767px) {
+	.responsive #top .av-masonry-entry{width:100%;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.responsive #top .av-masonry-entry{width:49.90%;}
+	.responsive #top .av-masonry-entry.av-landscape-img{width:100%;}
+
+}
+
+@media only screen and (max-width: 480px){
+	.responsive #top .av-masonry-entry{width:100%;}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 989px) {
+	.responsive .av-masonry-col-flexible.av-masonry-gallery .av-masonry-entry{width:33.3%;}
+	.responsive .av-masonry-col-flexible.av-masonry-gallery .av-masonry-entry.av-landscape-img{width:66.6%;}
+	.responsive .av-masonry-col-automatic .av-masonry-entry .av-masonry-entry-title{font-size:13px;}
+	.responsive .av-masonry-entry .av-masonry-entry-title+.av-masonry-entry-content{display:none;}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 989px) {
+	.responsive .av-masonry-col-flexible .av-masonry-entry{width:49.90%;}
+	.responsive .av-masonry-col-flexible .av-masonry-entry.av-landscape-img{width:100%;}
+}
+

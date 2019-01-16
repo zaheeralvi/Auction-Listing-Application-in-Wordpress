@@ -1,0 +1,110 @@
+
+/* ======================================================================================================================================================
+HEADING
+====================================================================================================================================================== */
+.av-special-heading{
+width:100%;
+clear:both;
+display: block;
+margin-top:50px;
+position: relative;
+}
+
+.avia_mobile .av-special-heading{
+-webkit-perspective: 1000px;
+-webkit-backface-visibility: hidden;
+}
+
+.av-special-heading.avia-builder-el-no-sibling{margin-top:0px; margin-bottom:0px;}
+
+.flex_column + .av-special-heading{float:left; }
+
+body .av-special-heading .av-special-heading-tag{
+padding:0;
+margin:0;
+float:left;
+}
+
+.meta-heading .av-special-heading-tag{
+font-weight: normal;
+}
+
+.custom-color-heading .av-special-heading-tag {
+color: inherit;
+}
+
+.special-heading-border{
+position: relative;
+overflow: hidden;
+}
+
+.av-special-heading-h1 .special-heading-border{height: 3.4em;}
+.av-special-heading-h2 .special-heading-border{height: 2.6em;}
+.av-special-heading-h3 .special-heading-border{height: 1.9em;}
+.av-special-heading-h4 .special-heading-border{height: 1.6em;}
+.av-special-heading-h5 .special-heading-border{height: 1.5em;}
+.av-special-heading-h6 .special-heading-border{height: 1.4em;}
+
+.special-heading-inner-border{
+display: block;
+width:100%;
+margin-left:15px;
+border-top-style: solid;
+border-top-width:1px;
+position: relative;
+top:50%;
+opacity: 0.15;
+filter:alpha(opacity=15);
+}
+
+.meta-heading .special-heading-inner-border{ opacity: 0.2; filter:alpha(opacity=20); }
+.custom-color-heading .special-heading-inner-border{ opacity: 0.4; filter:alpha(opacity=40); }
+#top #wrap_all .custom-color-heading .av-special-heading-tag, #top .custom-color-heading a, #top .custom-color-heading strong, #top .custom-color-heading .special_amp{color: inherit; }
+#top .custom-color-heading a{text-decoration: underline; }
+#top .custom-color-heading a:hover{opacity:0.8; text-decoration: none;}
+
+#top #wrap_all .av-inherit-size .av-special-heading-tag{ font-size: 1em; }
+.av-thin-font .av-special-heading-tag, .modern-quote .av-special-heading-tag{font-weight: 300;}
+.av-thin-font strong, .modern-quote strong{font-weight: 600;}
+
+body .av-special-heading.modern-centered{ text-align: center; }
+
+
+
+
+/*quote style*/
+body .av-special-heading.blockquote > *{
+white-space: normal;
+float: none;
+}
+
+.av-special-heading.classic-quote{
+text-align: center;
+}
+
+body .av-special-heading.classic-quote > *{
+display:block;
+font-family: "Droid Serif", Georgia, Times, serif;
+font-weight: normal;
+font-style: italic;
+float: none;
+}
+
+body .av-special-heading.blockquote .special-heading-border{display:none;}
+
+/*linked header*/
+#top .av-special-heading.av-linked-heading a:hover{
+	opacity: 0.5;
+}
+
+/*subheading*/
+
+.av-subheading{ font-size: 15px; line-height: 1.3em;  }
+.av-subheading p:first-child{margin-top:0;}
+.av-subheading p:last-child{margin-bottom:0;}
+.av-subheading_below{margin-top:0.3em;}
+.av-subheading_above{margin-bottom:0.3em;}
+.av-subheading.av_custom_color{opacity: 0.8;}
+@media only screen and (max-width: 767px) {
+#top #wrap_all .av-inherit-size .av-special-heading-tag{ font-size: 0.8em; }
+}

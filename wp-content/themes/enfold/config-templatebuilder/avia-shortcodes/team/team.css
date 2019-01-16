@@ -1,0 +1,83 @@
+/* ======================================================================================================================================================
+Team Member
+====================================================================================================================================================== */
+.avia-team-member{margin:30px 0; clear:both;}
+.avia-team-member.avia-builder-el-no-sibling{margin:0;}
+.team-member-name{margin-top:7px; font-size: 1.55em; }
+.team-member-job-title{margin-top:-7px; font-size: 1em; }
+.team-member-description{}
+.team-social a{text-decoration: none; position: relative; border-radius: 30px; padding: 0 16px; background: #fff;margin: 3px; display: inline-block; height:53px; line-height:54px; width:53px; }
+.team-img-container{ position: relative; overflow: hidden; border-radius: 3px; text-align: center; margin-bottom:10px; }
+.team-img-container img{ display:block; margin:0 auto; width:100%;}
+.team-img-container img.av-team-img-original{ width:auto; max-width:100%; }
+
+.avia-team-member .team-social{
+border: 7px solid rgba(0, 0, 0, 0.1);
+position: absolute;
+font-size:19px;
+background: #fff;
+background: rgba(255, 255, 255, 0.7);
+opacity: 0;
+visibility: hidden;
+top:0; left:0; right:0; bottom:0;
+text-align: center;
+border-radius:3px;
+}
+
+.team-social-inner{width:100%;padding:0 5%;position: absolute; top:50%; margin-top:-26px;left:0;}
+
+.team-img-container:hover .team-social{visibility: visible; opacity: 1; }
+
+
+
+
+.avia-team-member .plus-google:hover{ color:#de5a49; }
+.avia-team-member .rss:hover	    { color:#ffa133; }
+.avia-team-member .facebook:hover   { color:#37589b; }
+.avia-team-member .twitter:hover    { color:#46d4fe; }
+.avia-team-member .mail:hover       { color:#9fae37; }
+.avia-team-member .dribbble:hover   { color:#e44885; }
+.avia-team-member .linkedin:hover   { color:#419cca; }
+.avia-team-member .search:hover     { color:#222222; }
+.avia-team-member .behance:hover    { color:#008cfa; }
+.avia-team-member .flickr:hover     { color:#ff0086; }
+.avia-team-member .forrst:hover     { color:#234317; }
+.avia-team-member .myspace:hover    { color:#000000; }
+.avia-team-member .tumblr:hover     { color:#345574; }
+.avia-team-member .vimeo:hover      { color:#31baff; }
+.avia-team-member .youtube:hover    { color:#a72b1d; }
+.avia-team-member .pinterest:hover  { color:#cb2027; }
+.avia-team-member .skype:hover 	    { color:#12a5f4; }
+.avia-team-member .five_100_px:hover{ color:#222222; }
+.avia-team-member .soundcloud:hover { color:#F76700; }
+.avia-team-member .xing:hover 	    { color:#006567; }
+.avia-team-member .reddit:hover 	a{color:#FF4500; }
+
+
+/*mobile from super small to tablet*/
+@media only screen and (max-width: 989px) {
+	.responsive.av-no-preview .team-social a{ padding: 0 8px; background: #fff;margin: 3px; margin-top:11px; display: inline-block; height:33px; line-height:32px; width:33px; border-style: solid; border-width: 1px; }
+	.responsive.av-no-preview  #top .avia-team-member .team-img-container img{position: relative; z-index: 3;}
+	.responsive.av-no-preview  #top .avia-team-member .team-social {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		position: relative;
+		font-size: 20px;
+		background: #FFF;
+		background: rgba(0, 0, 0, 0.03);
+		opacity: 1;
+		visibility: visible;
+		top: auto;
+		left: 0;
+		right: 0;
+		bottom: 5px;
+		height: 60px;
+		text-align: center;
+		border-radius: 3px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		font-size: 15px;
+		z-index: 1;
+		}
+	}
+
+

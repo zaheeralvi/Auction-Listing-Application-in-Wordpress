@@ -1,0 +1,9 @@
+/*this files gets only loaded for admin single element previews*/
+
+html, body, #top #wrap_all{position: absolute;height:100%;width:100%; background: transparent;}
+#av-admin-preview.main_color{position: absolute;height:100%;width:100%; padding:20px; overflow-x: auto; background: transparent; }
+.avia-preview-error{padding:20px; background: #fff; border:1px solid #e1e1e1; font-size: 13px; line-height: 1.65em;}
+.hr-inner{margin-top:0;}
+.avia-preview-scale-75 > div{transform: scale(0.75,0.75); transform-origin: top left;}
+.avia-preview-scale-66 > div{transform: scale(0.66,0.66); transform-origin: top left;}
+.avia-preview-scale-50 > div{transform: scale(0.5,0.5); transform-origin: top left;}

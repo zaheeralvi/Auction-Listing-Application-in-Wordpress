@@ -1,0 +1,23 @@
+/* ======================================================================================================================================================
+Layout Grid + Cells
+====================================================================================================================================================== */
+.av-layout-grid-container{width:100%; table-layout: fixed; display: table; border-top-stye:none; border-top-width: 0px;}
+.flex_cell{display: table-cell; padding:30px; vertical-align: top; }
+.flex_cell_inner{display: block; position: relative;}
+
+.av-border-top-bottom{border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;}
+.av-border-cells .flex_cell{border-left-style: solid; border-left-width:1px;}
+.av-border-cells .flex_cell:first-child{border:none;}
+.av-layout-grid-container + .av-layout-grid-container{border-top:none;}
+
+
+/*no image radius if zero padding cell*/
+.av-zero-padding .av-hotspot-container-inner-wrap img { border-radius: 0; }
+
+body .flex_cell.avia-link-column{
+	cursor: pointer;
+}
+
+body .flex_cell.avia-link-column.avia-link-column-hover:hover{
+	opacity: 0.8;
+}

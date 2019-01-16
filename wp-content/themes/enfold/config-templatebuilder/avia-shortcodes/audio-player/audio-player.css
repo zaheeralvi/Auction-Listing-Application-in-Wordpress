@@ -1,0 +1,41 @@
+/* ======================================================================================================================================================
+AVIA PLAYER 
+====================================================================================================================================================== */
+
+/*playlist shortcode*/
+
+.av-player.av-player-container .wp-playlist{
+margin:0;
+}
+
+.av-player.av-player-container .av-player-cover-container .av-player-cover img{
+	display: block;
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.avia-playlist-hide-cover .wp-playlist-current-item{
+	height:auto;
+}
+
+#top .avia-playlist-custom-background-color .wp-playlist{ background: transparent; }
+#top .avia-playlist-custom-font-color *{ color:inherit; }
+#top .avia-playlist-custom-font-color .wp-playlist-item > *{ opacity: 0.8; }
+#top .avia-playlist-custom-font-color .wp-playlist-item.wp-playlist-playing > *{ opacity: 1; }
+
+#top .avia-playlist-custom-border-color .wp-playlist{ border: none; }
+#top .avia-playlist-custom-border-color{border-width:1px; border-style:solid;}
+
+#top .avia-playerstyle-minimal .wp-playlist{
+	padding:0;
+	border-color:transparent;
+	background: transparent;
+}
+
+#top .avia-playerstyle-minimal .wp-playlist .wp-playlist-item{
+	border-color:transparent;
+}
+
+#top .avia-playerstyle-minimal.avia-playlist-custom-background-color .wp-playlist{
+	padding:10px;
+}

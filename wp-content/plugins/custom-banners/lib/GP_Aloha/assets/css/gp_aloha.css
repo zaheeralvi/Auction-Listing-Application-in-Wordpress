@@ -1,0 +1,104 @@
+.gp_aloha {
+	max-width: 1080px;
+	padding-left: 20px;
+	width: 95%;
+}
+
+.gp_aloha .aloha_tagline {
+	color: #555d66;
+	font-size: 19px;
+	min-height: 60px;
+	margin: 1em 200px 1em 0;
+}
+
+.gp_aloha .aloha_intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.gp_aloha .aloha_tip {
+	background-color: lightyellow;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.gp_aloha .continue_to_settings {
+	border-top: 1px solid #eee;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.gp_aloha .continue_to_settings p {
+	margin-bottom: 0;
+}
+
+
+.gp_aloha .plugin_activated {
+	color: green;
+	font-weight: bold;
+}
+
+.gp_aloha .aloha_header {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: .67em;
+    margin-top: 40px;
+}
+
+.gp_aloha .aloha_body {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px 30px 40px;
+}
+
+.gp_aloha .aloha_body  h1 {
+	padding-top: 50px;
+	margin-top: -30px;
+}
+
+.gp_aloha .aloha_body  h3 {
+	padding-top: 50px;
+	margin-top: -30px;
+}
+
+.gp_aloha .aloha_body  h4 {
+	font-size: 15px;
+}
+
+.gp_aloha .aloha_body  p {
+	line-height: 1.75;
+}
+
+.gp_aloha .three_col {
+	margin-bottom: 40px;
+}
+
+.gp_aloha .three_col .col {
+	display: inline-block;
+	width: 29%;
+	margin-right: 6%;
+	min-width: 270px;
+	vertical-align: top;
+}
+
+.gp_aloha .three_col .col:last-child {
+	margin-right: 0;
+}
+
+.gp_aloha .col > ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.aloha_jump_links {
+	padding-top: 50px;
+	margin-top: -50px;
+}
+
+.aloha_code {
+	background-color: white;
+	border: 1px solid gray;
+	padding: 2px 4px 4px;
+}

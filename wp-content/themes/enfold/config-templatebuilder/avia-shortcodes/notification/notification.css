@@ -1,0 +1,50 @@
+/* ======================================================================================================================================================
+Message Box
+====================================================================================================================================================== */
+
+
+.avia_message_box{
+text-align: center;
+position: relative;
+border-color: #e1e1e1;
+background-color: #f8f8f8;
+clear: both;
+margin:30px 0;
+}
+
+div .avia_message_box .avia_message_box_title{
+background-color: rgba(0,0,0,0.05);
+position: absolute;
+top:0;
+left:0;
+padding:5px 20px;
+font-size: 11px;
+text-shadow: none;
+}
+
+.avia_message_box_content{ font-size: 14px; text-transform: uppercase; font-weight:600;}
+.avia_message_box_icon{ position: relative; left: -0.5em; font-size: 1.3em;}
+.avia_message_box.avia-size-normal{ padding: 17px; }
+.avia_message_box.avia-size-large{ padding: 35px; }
+
+.avia_message_box.avia-color-green , .avia_message_box.avia-color-green a	 {background-color: #E0F1B5; 	border-color: #8BAF5B; 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); 	color: #4F5F39; }
+.avia_message_box.avia-color-blue  , .avia_message_box.avia-color-blue a	 {background-color: #F5F6FC; 	border-color: #9DADBF; 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); 	color: #4671A3; }
+.avia_message_box.avia-color-red   , .avia_message_box.avia-color-red a	     {background-color: #FFF8F4; 	border-color: #CDA18F; 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); 	color: #AF2C20; }
+.avia_message_box.avia-color-orange, .avia_message_box.avia-color-orange a   {background-color: #FFFDF3; 	border-color: #E6BF4A; 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); 	color: #C96D11; }
+.avia_message_box.avia-color-grey  , .avia_message_box.avia-color-grey a	 {background-color: #333; 		border-color: #444; 	text-shadow: 0 1px 0 rgba(0, 0, 0, 1); 			color: #fff; }
+.avia_message_box.avia-color-silver, .avia_message_box.avia-color-silver a   {background-color: #f8f8f8; 	border-color: #e1e1e1; 	text-shadow: 0 1px 0 rgba(255, 255, 255, 1); 	color: #444; }
+.avia_message_box_content p{display: inline;}
+#top .avia_message_box_content strong{color:inherit;}
+
+.avia_message_box a{text-decoration: underline; }
+#top .avia_message_box a:hover{color:inherit; opacity: 0.7;}
+
+.avia_message_box.avia-icon_select-no .avia_message_box_icon{ display:none }
+
+.avia_message_box.avia-border-solid{border-width:3px; border-style: solid;}
+.avia_message_box.avia-border-dashed{border-width:1px; border-style: dashed;}
+.avia_message_box a.av_message_close{position: absolute;right: 0;top: 0;text-decoration: none;display: block;width: 1.2em;height: 1.2em;background: rgba(0,0,0,0.05);text-shadow: none;text-align: center;cursor: pointer; line-height: 1.2em; font-size: 1em; font-family: Arial, Baskerville, monospace !important;}
+
+
+.avia_message_box.messagebox-hidden{display: none;}
+.avia_message_box.avia-color-custom .av_message_close{color: inherit;}

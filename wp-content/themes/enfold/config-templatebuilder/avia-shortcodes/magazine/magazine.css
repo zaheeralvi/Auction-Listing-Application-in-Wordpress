@@ -1,0 +1,69 @@
+/* ======================================================================================================================================================
+Magazine
+====================================================================================================================================================== */
+
+.av-magazine{clear:both;  overflow: hidden; margin-bottom:30px;  -webkit-perspective: 1000px; -webkit-backface-visibility: hidden;}
+.av-magazine-group{clear:both; position: relative; overflow: hidden; }
+.av-magazine-group.av-hidden-mag{display:none;}
+.av-magazine-entry{clear:both; position: relative; margin-bottom: 10px;}
+.av-magazine-thumbnail{float:left; margin-right:15px; width:61px; min-height:61px; border:1px solid; padding:5px; display: block; text-align: center; position: relative;}
+.av-magazine-thumbnail-link{overflow: hidden; display: block;}
+.av-magazine-thumbnail img{ display:block; margin:0 auto; }
+.av-magazine .av-magazine-no-thumb .av-magazine-content-wrap{ min-height: 0px; }
+.av-magazine .av-magazine-no-thumb .av-magazine-content-wrap .av-magazine-title{padding-bottom:10px;}
+.av-magazine .av-magazine-entry-icon{font-size: 20px; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; line-height: 51px;}
+.av-magazine .av-magazine-entry-icon:hover{text-decoration: none;}
+
+.av-magazine-content-wrap{overflow: hidden; border-bottom:1px solid; min-height: 61px;}
+.av-magazine header{position: relative;}
+.av-magazine-time, .av-magazine-author, .av-magazine-text-sep{font-size: 12px; text-transform: uppercase;}
+.av-magazine-text-sep{padding: 0 5px;}
+.av-magazine-text-sep, .av-magazine-author{ display: none; }
+.av-magazine .av-magazine-content-wrap .av-magazine-title{font-size: 14px; line-height: 1.3em; text-transform: none; letter-spacing:normal; padding:0; margin:0;}
+
+.av-magazine-hero .av-magazine-thumbnail{margin:0 0 8px 0; float:none; width:100%; border-radius: 2px; padding:7px;}
+.av-magazine-hero .av-magazine-content-wrap{ padding-bottom: 10px;}
+.av-magazine-hero-left .av-magazine-hero .av-magazine-content-wrap{border:none; margin-bottom:0px; padding-bottom: 0px;}
+.av-magazine-hero .av-magazine-content{margin-top:10px;}
+
+.av-magazine .av-magazine-sideshow.av_one_half{margin-left:3%; padding-left: 3%; width:50%; border-left-width:1px; border-left-style:  solid;}
+
+.av-magazine-top-bar{line-height: 30px; overflow: hidden; border-bottom-width:1px; border-bottom-style: solid; margin-bottom:10px;}
+.av-magazine-hero-left .av-magazine-top-bar{margin-bottom:0px; }
+.av-magazine-hero-top .av-magazine-top-bar{margin-bottom:0px; border:none; }
+.av-magazine-hero-left.av-magazine-top-bar-active .flex_column{padding-top:20px;}
+.av-magazine-top-heading{font-size: 15px; font-weight: bold; text-transform: uppercase; float: left; }
+.av-magazine-sort{float:right; font-size: 12px;}
+
+
+#top .av-magazine .avia-inherit-font-color a.av-magazine-top-heading,
+#top .av-magazine .avia-inherit-font-color a.active_sort,
+#top .av-magazine .avia-inherit-font-color a:hover{color: inherit;}
+
+
+.avia-font-color-grey	{color: #555;   }
+.avia-font-color-black 	{color: #2c2c2c;}
+.avia-font-color-red 	{color: #B02B2C;}
+.avia-font-color-orange {color: #edae44;}
+.avia-font-color-green 	{color: #83a846;}
+.avia-font-color-blue 	{color: #7bb0e7;}
+.avia-font-color-aqua 	{color: #4ecac2;}
+.avia-font-color-teal 	{color: #5f8789;}
+.avia-font-color-purple {color: #745f7e;}
+.avia-font-color-pink 	{color: #d65799;}
+.avia-font-color-silver {color: #DADADA;}
+
+@media only screen and (max-width: 767px)
+{
+	.responsive #top #wrap_all .av-magazine .flex_column{
+		margin: 0px;
+		padding-left: 0px;
+		width:100%;
+		border:none;
+	}
+}
+
+
+
+
+

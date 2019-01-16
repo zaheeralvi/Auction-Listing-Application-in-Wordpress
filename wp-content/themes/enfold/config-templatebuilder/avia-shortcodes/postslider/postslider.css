@@ -1,0 +1,82 @@
+/* ======================================================================================================================================================
+Post Slider
+====================================================================================================================================================== */
+.avia-content-slider{ margin:30px 0; clear:both; }
+.avia-content-slider, .avia-content-slider-inner{ position: relative; overflow: hidden; clear:both; }
+.avia-content-slider .slide-entry-title{font-size:1.1em; line-height:1.4em; margin:0;}
+.avia-content-slider .slide-image, .avia-content-slider .slide-image img{border-radius: 3px; display: block; position: relative; -webkit-perspective: 1000px;
+-webkit-backface-visibility: hidden; margin:0 auto;}
+.avia-content-slider .slide-image{overflow:hidden; margin-bottom:6px; border-radius: 3px;}
+.avia-content-slider .slide-entry-excerpt{ overflow: hidden; text-overflow: ellipsis; } 
+.avia-content-slider .slide-entry-wrap{width:100%; float:left; margin-bottom:40px;}
+.avia-content-slider-active .slide-entry-wrap{position: absolute; top:0; visibility: hidden; margin:0;}
+.avia-content-slider .slide-entry-wrap:first-child{position: relative;}
+.avia-content-slider .slide-meta div, .avia-content-slider .slide-meta time{display: inline-block; font-size: 0.9em;}
+.avia-content-slider .slide-meta a{position: relative;}
+.avia-content-slider .slide-meta{position: relative;  padding-bottom: 10px; }
+.avia-content-slider .slide-meta-del{margin:0px 4px;}
+.avia-content-slider.avia-builder-el-no-sibling{margin:0;}
+
+
+.slider-fallback-image{visibility: hidden;}
+.avia-content-slider .fake-thumbnail .slide-image{border-width: 1px; border-style: solid; -webkit-perspective: 1000px; -webkit-backface-visibility: hidden; min-height: 70px;}
+.fallback-post-type-icon{position: absolute; top:49%; left:50%; margin:-28px 0 0 -30px; height:60px; width:60px; line-height:59px; font-size:25px; text-align:center; border-radius: 100px;}
+.avia-content-slider .slide-image:hover .fallback-post-type-icon{opacity: 0;}
+.pagination-slider .pagination{padding: 1px 0 10px 0;}
+
+
+.avia_desktop .avia-content-slider .avia-slideshow-arrows a{ opacity: 0; }
+#top .avia-content-slider:hover .avia-slideshow-arrows a{opacity: 1;}
+
+
+#top .avia-content-slider .avia-slideshow-arrows a{ top: 38%; margin: -30px 0 0;}
+
+#top .avia-content-slider, #top .avia-content-slider-inner, #top .avia-content-slider-inner .slide-entry-wrap{ 
+/* fixes flickering issue when slider moves. usually other elements in other container flicker. temp removed */
+/* old: */
+/* -webkit-transform-style: preserve-3d; */
+
+/* new; */
+-webkit-transform-style: flat;
+-webkit-perspective: 1000px;
+-webkit-backface-visibility: hidden;
+}
+
+
+/*audio*/
+#top #wrap_all .avia-content-slider .audio-preview{
+	margin-top: -36px;
+  margin-bottom: -4px;
+}
+
+#top .avia-content-slider .audio-preview .mejs-volume-button,
+#top .avia-content-slider .audio-preview .mejs-time{
+	display:none;
+}
+
+#top #wrap_all .mejs-controls a.mejs-horizontal-volume-slider{
+	width:60px;
+}
+
+/*fix blur on content slider in safari*/
+.avia-safari .avia-content-slider, .avia-safari .avia-content-slider-inner, .avia-safari .avia-content-slider-inner .slide-entry-wrap { 
+-webkit-perspective: 0 !important;
+}
+
+
+@media only screen and (max-width: 767px)
+{
+	.responsive #top #wrap_all .slide-entry{width:48%; margin-left:4%}
+	.responsive #top #wrap_all .avia-content-slider-even .slide-entry.slide-parity-odd,
+	.responsive #top #wrap_all .avia-content-slider-odd .slide-entry.slide-parity-even{margin:0; clear:both;}
+	.responsive #top #wrap_all .avia-content-slider-odd  .slide-entry.first{margin-left:0; width:100%;}
+	.responsive avia-content-slider .slide-image img { width: 100%; }
+}
+
+@media only screen and (max-width: 479px)
+{
+	.responsive #top #wrap_all .avia-content-slider-odd  .slide-entry{margin-left:0; clear:both; width:100%;}
+}
+
+
+

@@ -1,0 +1,49 @@
+/* ======================================================================================================================================================
+Promo Box
+====================================================================================================================================================== */
+
+.av_promobox{
+position: relative;
+border-width: 1px;
+border-style: solid;
+overflow: hidden;
+padding:20px 30px;
+clear:both;
+margin:50px 0;
+width:100%;
+float:left;
+}
+
+.flex_column >.av_promobox:first-child{margin-top:0;}
+
+.av_promobox .avia-button{
+right: 30px;
+top: 50%;
+position: absolute;
+z-index: 2;
+}
+
+.avia-promocontent{
+margin-right:200px;
+position: relative;
+z-index: 3;
+
+}
+
+.avia-promocontent p{
+font-size: 14px;
+}
+
+.avia-button-no .avia-promocontent{margin:0;}
+.avia-button-no .avia-button{display:none;}
+
+.av_promobox .avia-button.avia-size-small{ margin-top:-15px; }
+.av_promobox .avia-button.avia-size-medium{ margin-top:-19px; }
+.av_promobox .avia-button.avia-size-large{ margin-top:-21px; }
+
+@media only screen and (max-width: 767px)
+{
+	.responsive .avia-promocontent{margin: 0;}
+	.responsive .av_promobox .avia-button, .responsive .av_promobox .avia-button-wrap{width:100%; margin-top:4px; position: relative; top:0; left:0; text-align: center; float:none;}
+}
+

@@ -1,0 +1,151 @@
+/* ======================================================================================================================================================
+Image
+====================================================================================================================================================== */
+.avia-image-container{display:block; position: relative; max-width: 100%;}
+.avia-image-container-inner, .avia_image, .av-image-caption-overlay{border-radius: 3px; display:block; position: relative; max-width: 100%;}
+.avia-image-container.avia-align-center{display:block; margin: 0 auto 10px auto;  text-align: center;  clear: both;}
+.avia-image-container.avia-align-center .avia-image-container-inner{margin:0 auto; display:inline-block; vertical-align:bottom}
+.avia-image-container.avia-align-left{display:block; float:left; margin-right: 15px; margin-top: 5px;}
+.avia-image-container.avia-align-right{display:block; float:right; margin-left: 15px; margin-top: 5px;}
+.avia-image-container.avia-align-center.avia-builder-el-no-sibling{margin-bottom:0; margin-top:0;}
+
+.avia_image + br{display:none;}
+
+.avia-image-overlay-wrap a.avia_image{overflow: hidden; }
+.avia-image-overlay-wrap a.avia_image .image-overlay{-webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5);}
+
+.av-hover-grow,
+.av-hover-grow .avia-image-overlay-wrap a.avia_image 
+{
+    overflow: visible;
+}
+
+/*styling variations*/
+
+.av-styling-circle .avia-image-container-inner, .av-styling-circle .avia_image, .av-styling-circle .av-image-caption-overlay,
+.av-styling-circle div.av-caption-image-overlay-bg{overflow: hidden; border-radius: 10000px; }
+.avia-safari div.av-image-caption-overlay-center { -webkit-transform:translate3d(0,0,0); }/*flicker fix for caption in safari*/
+
+.av-styling-no-styling .avia-image-container-inner, .av-styling-no-styling .avia_image, .av-styling-no-styling .av-image-caption-overlay{border-radius: 0; border:none;}
+
+/*captions*/
+.av-image-caption-overlay{position: absolute; height:100%; width:100%;  z-index: 10; text-align: center;
+-webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;
+}
+
+.avia-msie-8 .av-image-caption-overlay{background: #000; filter:alpha(opacity=40); }
+.av-image-caption-overlay-position{display: table; width: 100%; height:100%; position: relative; }
+.av-image-caption-overlay-center{display:table-cell;  vertical-align: middle; font-size: 1.3em; line-height: 1.5em; padding: 0px 1.5em; }
+.av-image-caption-overlay-center p:first-child{margin-top:0;}
+.av-image-caption-overlay-center p:last-child{margin-bottom:0;}
+
+.av-caption-image-overlay-bg{position: absolute; height:100%; width:100%; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.av-overlay-hover-deactivate:hover .av-caption-image-overlay-bg{opacity: 0 !important; }
+.av-overlay-on-hover .av-image-caption-overlay{opacity: 0; filter:alpha(opacity=00); }
+.av-overlay-on-hover .avia-image-container-inner:hover .av-image-caption-overlay{opacity: 1; filter:alpha(opacity=100);}
+
+.avia_transform .avia_animated_image{
+opacity: 0;
+}
+
+
+/* image copyright */
+
+.avia-image-container small.avia-copyright{
+  font-size: 0.8em;
+  text-align: left;
+  line-height: 1.7em;
+}
+/* Simple */
+
+.avia-image-container .avia-copyright{
+  display: block;
+}
+
+.avia-image-container.av-has-copyright .avia-image-overlay-wrap{
+  position: relative;
+  overflow: hidden;
+}
+
+.av-styling-circle.avia-image-container.av-has-copyright .avia-image-container-inner{
+  overflow: visible;
+}
+
+.avia-image-container.av-has-copyright.av-styling-circle .avia-copyright{
+  text-align: center;
+}
+
+/* Icon Reveal on Hover */
+
+.avia-image-container.av-has-copyright.av-copyright-icon-reveal .avia-copyright{
+  position: absolute;
+  background-color: rgba(0,0,0,0.1);
+  text-align: right;
+  color: #fff;
+  padding: 0 2em 0 0;
+  right: 0;
+  bottom: 0;
+  width: 2em;
+  line-height: 2em;
+  max-height: 2em;
+  text-indent: -99999px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 308;
+}
+
+.avia-image-container.av-has-copyright.av-copyright-icon-reveal .avia-copyright:hover{
+  width: 100%;
+  padding: 0 3em 0 1em;
+  text-indent: 0;
+  max-height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.avia-image-container.av-has-copyright.av-copyright-icon-reveal .avia-copyright:after{
+  content: "\E81e";
+  font-family: "entypo-fontello";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-indent: 0;
+  font-size: 0.8em;
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.8em;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.avia-image-container.av-has-copyright.av-copyright-icon-reveal .avia-copyright:hover:after{
+  background-color: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,1);
+}
+
+
+.avia-image-container.av-styling-circle.av-has-copyright.av-copyright-icon-reveal .avia-copyright{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.15);
+  text-align: right;
+}
+
+.avia-image-container.av-styling-circle.av-has-copyright.av-copyright-icon-reveal .avia-copyright:after{
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.avia-image-container.av-styling-circle.av-has-copyright.av-copyright-icon-reveal .avia-copyright:hover{
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+

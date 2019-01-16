@@ -1,0 +1,112 @@
+/* ======================================================================================================================================================
+Animated Numbers
+====================================================================================================================================================== */
+
+.avia-animated-number{
+display: block;
+clear: both;
+position: relative;
+text-align: center;
+}
+
+.avia-animated-number:hover{text-decoration: none;}
+.avia-animated-number-content{line-height: 1.3em;}
+.avia-animated-number.avia-color-font-light .avia-animated-number-content, .avia-animated-number.avia-color-font-light .heading{
+color:#fff;
+}
+
+.avia-animated-number.avia-color-font-dark .avia-animated-number-content, .avia-animated-number.avia-color-font-dark .heading{
+color:#222;
+}
+
+#top .avia-color-font-custom .heading {
+color: inherit;
+}
+
+.avia-animated-number.avia-color-font-embossed .avia-single-number{
+text-shadow: 0 1px 0 rgb(203, 203, 203), 0 2px 0 rgb(201, 201, 201), 0 3px 0 rgb(186, 186, 186), 0 4px 0 rgb(184, 184, 184), 0 5px 0 rgb(171, 171, 171), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+color: rgb(255, 255, 255);
+}
+
+
+.avia-animated-number-title{
+font-size: 40px;
+white-space: nowrap;
+line-height: 1em;
+position: relative;
+letter-spacing: -2px;
+font-weight: 400;
+margin-bottom: 4px;
+}
+
+
+.avia-no-number{
+opacity: 0.5;
+font-size: 0.8em;
+font-weight: normal;
+}
+
+.avia-animated-number-content{
+padding: 0;
+position: relative;
+clear: none;
+overflow: hidden;
+font-size: 15px;
+}
+
+.avia-animated-number-content p{
+margin: 0;
+}
+
+.js_active .avia-animated-number-title{
+visibility: hidden;
+}
+
+.number_prepared .avia-animated-number-title{
+visibility: visible;
+}
+
+.av-icon-before-number{margin-right:10px;}
+.av-icon-after-number{margin-left:10px;}
+
+.avia-animated-number-circle{
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.avia-animated-number-circle:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.avia-animated-number-circle-inner{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.avia-animated-number-circle-inner:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.av-circle-hover-animate:hover{
+    animation: sonarEffect 1s ease-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .avia-animated-number-circle {
+        display: none;
+    }
+}

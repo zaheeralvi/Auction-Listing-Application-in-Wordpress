@@ -1,0 +1,103 @@
+/* ======================================================================================================================================================
+Button
+====================================================================================================================================================== */
+
+/*button element*/
+.avia-button-wrap{display:inline-block;}
+
+.avia-button{
+color:#777;
+border-color: #e1e1e1;
+background-color: #f8f8f8;
+}
+
+body div .avia-button{
+border-radius: 3px;
+padding:10px;
+font-size: 12px;
+text-decoration: none;
+display:inline-block;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+margin:3px 0;
+line-height: 1.2em;
+position: relative;
+font-weight: normal;
+text-align: center;
+max-width: 100%;
+}
+
+.avia-button:hover{opacity: 0.9;}
+.avia-button:active{border-bottom-width: 0px; border-top-width: 1px; border-top-style: solid;}
+.avia-button.avia-color-theme-color-subtle{background-image: none;}
+.avia-button.avia-color-theme-color-subtle:hover{}
+
+
+.avia-button .avia_button_icon{position: relative; left: -0.3em; -webkit-perspective: 1000px; -webkit-backface-visibility: hidden;}
+.avia-button .avia_button_icon.avia_button_icon_right{left: 0.3em;}
+.avia-button.avia-icon_select-no .avia_button_icon{ display:none }
+
+.avia-button.avia-color-grey, 	.avia-button.avia-color-grey:hover	{background-color: #555; 		border-color: #333333; 	color: #fff; }
+.avia-button.avia-color-black, 	.avia-button.avia-color-black:hover	{background-color: #2c2c2c; 	border-color: #000; 	color: #fff; }
+.avia-button.avia-color-red, 	.avia-button.avia-color-red:hover   {background-color: #B02B2C; 	border-color: #8B2121; 	color: #fff; }
+.avia-button.avia-color-orange, .avia-button.avia-color-orange:hover{background-color: #edae44; 	border-color: #CA9336; 	color: #fff; }
+.avia-button.avia-color-green, 	.avia-button.avia-color-green:hover	{background-color: #83a846; 	border-color: #6F8F3B; 	color: #fff; }
+.avia-button.avia-color-blue, 	.avia-button.avia-color-blue:hover	{background-color: #7bb0e7; 	border-color: #6693C2; 	color: #fff; }
+.avia-button.avia-color-aqua, 	.avia-button.avia-color-aqua:hover	{background-color: #4ecac2; 	border-color: #3EAAA3; 	color: #fff; }
+.avia-button.avia-color-teal, 	.avia-button.avia-color-teal:hover	{background-color: #5f8789; 	border-color: #3F5E5F; 	color: #fff; }
+.avia-button.avia-color-purple, .avia-button.avia-color-purple:hover{background-color: #745f7e; 	border-color: #514358; 	color: #fff; }
+.avia-button.avia-color-pink, 	.avia-button.avia-color-pink:hover	{background-color: #d65799;		border-color: #BB4B85; 	color: #fff; }
+.avia-button.avia-color-silver, .avia-button.avia-color-silver:hover{background-color: #DADADA; 	border-color: #B4B4B4; 	color: #555; }
+
+
+#top .avia-button.avia-color-light{color:#fff; border:3px solid #fff; background: transparent;}
+#top .avia-button.avia-color-dark{ color:#000; border:3px solid #000; color:rgba(0,0,0,0.6);  border-color: rgba(0,0,0,0.6); background: transparent;}
+.avia-button.avia-color-light:hover{opacity: 0.7; color:#fff; }
+.avia-button.avia-color-dark:hover{ opacity: 0.7; color:#000; color:rgba(0,0,0,0.6);}
+
+.avia-button.avia-color-theme-color-subtle{border-width:1px; border-style: solid;}
+
+.avia-button-center {display:block; text-align: center; clear:both;}
+.avia-button-right  {display:block; float:right;}
+.avia-button.avia-position-right{float:right; display:block;}
+.avia-button.avia-position-left{float:left; display:block;}
+
+.avia-button.avia-size-small{
+padding:9px 10px 7px;
+font-size: 13px;
+min-width: 80px;
+}
+
+.avia-button.avia-size-medium{
+padding:12px 16px 10px;
+font-size: 13px;
+min-width: 90px;
+}
+
+.avia-button.avia-size-large{
+padding: 15px 30px 13px;
+font-size: 13px;
+min-width: 139px;
+}
+
+.avia-button.avia-size-x-large{
+padding: 25px 50px 23px;
+font-size: 15px;
+min-width: 200px;
+}
+
+.av-icon-on-hover .avia_button_icon{ width: 0px; overflow: hidden; display: inline-block; height: 1em;  -webkit-transition: all 0.2s ease-in-out; transition:all 0.2s ease-in-out; opacity: 0; }
+.av-icon-on-hover:hover .avia_button_icon{ width: 1.5em; opacity: 1;}
+
+#top .av-button-notext{min-width: 0;}
+#top .av-button-notext .avia_button_icon{left:0;}
+
+.av-button-label-on-hover{
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+}        
+.av-button-label-on-hover.avia-button.avia-size-small{padding:0; line-height: 30px; width: 32px;}
+.av-button-label-on-hover.avia-button.avia-size-medium{padding:0; line-height: 36px; width: 38px;}
+.av-button-label-on-hover.avia-button.avia-size-large{padding:0; line-height: 42px; width: 44px;}
+.av-button-label-on-hover.avia-button.avia-size-x-large{padding:0; line-height: 66px; width: 68px;}

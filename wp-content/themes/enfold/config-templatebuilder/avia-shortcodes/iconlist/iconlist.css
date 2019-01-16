@@ -1,0 +1,94 @@
+/* ======================================================================================================================================================
+ICONLIST
+====================================================================================================================================================== */
+.avia-icon-list-container{margin:30px 0; clear: both;}
+.avia-icon-list{margin:0; padding:0;}
+.avia-icon-list li{margin:0; padding:0 0 30px 0; list-style-type: none; list-style-position: outside; clear:both;  position: relative; min-height:60px;}
+.avia-icon-list .iconlist_icon{height:64px; width:64px; line-height: 64px; font-size: 30px; text-align: center; border-radius: 500px; position: relative; float:left; margin-right:30px; margin-left:2px; z-index: 5; color:#fff;}
+.avia-icon-list a.iconlist_icon:hover{color:#fff; text-decoration: none;}
+.avia-icon-list .iconlist_title{text-transform: uppercase; top: 4px; margin-bottom:0; position: relative;}
+#top .avia-icon-list .iconlist_title a:hover{text-decoration: underline;}
+.avia-icon-list .iconlist_content_wrap{overflow: hidden; min-height: 1.5em; padding-bottom:4px;}
+.avia-icon-list article.article-icon-entry { min-height: 45px; }
+.avia-icon-list .av-iconlist-empty .iconlist_title{margin-top: 17px;}
+.avia-icon-list .iconlist-timeline{
+position: absolute;
+top: 1%;
+left: 32px;
+width: 1px;
+height: 99%;
+border-right-width: 1px;
+border-right-style: dashed;
+}
+
+.avia-icon-list .iconlist_content{line-height: 1.65em;}
+.avia-icon-list .iconlist_content li {
+min-height: 0;
+padding: 0;
+list-style: disc outside;
+}
+
+.avia-icon-list li:last-child .iconlist-timeline{display:none;}
+
+#top .av_iconlist_title a{text-decoration: none;}
+#top .av_iconlist_title a:hover{text-decoration: underline;}
+
+/*iconlist small*/
+#top .av-iconlist-small li{padding:0px; min-height:0px;}
+#top .av-iconlist-small article.article-icon-entry{ min-height:0px; }
+#top .av-iconlist-small .iconlist-timeline{display:none;}
+#top .av-iconlist-small .iconlist_icon{
+	background: transparent; color: inherit; height: 1.45em; width: 1.45em;
+	line-height: 1.45em; font-size: inherit; margin-right: 0.25em;
+}
+#top .av-iconlist-small.avia-icon-list-right .iconlist_icon {
+    float: right;
+    margin-left: 0.1em;
+    margin-right: 2px;
+}
+
+#top .av-iconlist-small .iconlist_content_wrap{
+	min-height: 0;
+	padding: 0;
+}
+
+.av-iconlist-small .iconlist_title_small {
+    line-height: 1.45em;
+}
+
+.av-iconlist-small .iconlist_content p:first-child{
+	margin-top: 2px;
+}
+
+
+/*right icons*/
+.avia-icon-list-right {text-align: right;}
+.avia-icon-list-right .iconlist_icon{float:right; margin-left:30px; margin-right:0;  margin-right:2px; }
+.avia-icon-list-right .iconlist-timeline{left: auto; right: 32px;}
+
+/*iconlist animation*/
+.avia_transform .avia-icon-list.av-iconlist-big.avia-iconlist-animate .iconlist_icon{
+opacity: 0.1;
+-webkit-transform:scale(0.5);
+-ms-transform:scale(0.5);
+transform:scale(0.5);
+}
+
+.avia_transform .avia-iconlist-animate .iconlist-timeline{
+height: 0%;
+}
+
+.avia_transform .avia-icon-list.av-iconlist-big.avia-iconlist-animate .avia_start_animation .iconlist_icon{
+-webkit-animation: avia_appear 1s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* Safari 4+ */
+animation:         avia_appear 1s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* IE 10+ */
+opacity: 1;
+-webkit-transform:scale(1);
+-ms-transform:scale(1);
+transform:scale(1);
+}
+
+.avia_transform .avia-icon-list.av-iconlist-big.avia-iconlist-animate .avia_start_animation .iconlist-timeline{
+-webkit-animation: avia_slide_down 1s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* Safari 4+ */
+animation:         avia_slide_down 1s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); /* IE 10+ */
+height: 100%;
+}

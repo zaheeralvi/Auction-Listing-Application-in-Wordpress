@@ -1,0 +1,181 @@
+/* ======================================================================================================================================================
+Layer Slider
+====================================================================================================================================================== */
+div .avia-layerslider .ls-fullwidth .ls-nav-sides,
+div .avia-layerslider .ls-fullwidth .ls-bottom-slidebuttons a,
+div .avia-layerslider .ls-fullwidth .ls-nav-prev,
+div .avia-layerslider .ls-fullwidth .ls-nav-next,
+div .avia-layerslider .ls-fullwidth .ls-nav-start,
+div .avia-layerslider .ls-fullwidth .ls-nav-stop,
+div .avia-layerslider .ls-fullwidth .ls-fullscreen,
+div .avia-layerslider .ls-fullwidth .ls-loading-container,
+div .avia-layerslider .ls-noskin .ls-loading-container,
+div .avia-layerslider .ls-noskin .ls-fullscreen {
+	background-image: none;
+}
+	
+
+.avia-layerslider .ls-container.ls-fullwidth{
+margin-bottom:0 !important;
+}
+
+.avia-layerslider{
+border-top-style: solid;
+border-top-width:1px;
+overflow: hidden !important;
+}
+
+/*default line-height:normal produces results that do not match the backend*/
+#top #wrap_all .ls-wp-container .ls-slide > *{
+line-height: 1.1em;
+}
+
+#top .avia-layerslider .ls-nav-prev, #top .avia-layerslider .ls-nav-next {
+display: block;
+text-decoration: none;
+color: #fff;
+position: absolute;
+width:60px;
+text-align: center;
+height: 60px;
+line-height: 62px;
+font-size: 25px;
+top:50%;
+margin:-30px 15px 0;
+background: transparent;
+color: #fff;
+visibility: hidden;
+opacity: 0.5;
+z-index: 10000;
+left:30px;
+}
+
+.avia-layerslider .ls-inner div, .avia-layerslider .ls-inner img{
+	-webkit-backface-visibility: hidden;
+}
+
+
+#top .avia-layerslider .ls-nav-next{
+left:auto;
+right:30px;
+}
+
+#top .avia-layerslider .ls-nav-prev:before{
+text-indent: -4px;
+}
+
+#top .avia-layerslider .ls-nav-prev:hover, #top .avia-layerslider .ls-nav-next:hover{
+opacity:1;
+}
+
+#top .avia-layerslider .ls-nav-prev:before, #top .avia-layerslider .ls-nav-next:before{
+visibility: visible;
+display: block;
+position: absolute;
+z-index: 100;
+background: #000;
+background: rgba(0,0,0,0.3);
+top:0;
+left:0;
+right:0;
+bottom:0;
+border-radius: 3px;
+text-align: center;
+line-height: 62px;
+
+}
+
+#top .avia-layerslider .ls-nav-start, #top .avia-layerslider .ls-nav-stop{
+font-size: 13px;	
+}
+
+#top .avia-layerslider .ls-bottom-slidebuttons a, #top .avia-layerslider .ls-nav-start, #top .avia-layerslider .ls-nav-stop{
+display: inline-block;
+height:10px;
+width:10px;
+border-radius: 30px;
+background: #000;
+opacity: 0.3;
+filter:alpha(opacity=30);
+border:2px solid #fff !important;
+text-indent: 300%;
+overflow: hidden;
+text-indent: 0;
+z-index: 10000;
+}
+
+
+
+#top .avia-layerslider .ls-bottom-slidebuttons{height:30px;}
+#top .avia-layerslider .ls-bottom-slidebuttons a.ls-nav-active, #top .avia-layerslider .ls-bottom-slidebuttons a:hover, #top .avia-layerslider a.ls-nav-start:hover, #top .avia-layerslider a.ls-nav-stop:hover, #top .avia-layerslider a.ls-nav-start-active, #top .avia-layerslider a.ls-nav-stop-active
+{opacity: 0.6; filter:alpha(opacity=60); background: #000;}
+
+#top .avia-layerslider .ls-nav-start, #top .avia-layerslider .ls-nav-stop{
+position: relative;
+height:23px;
+width:23px;
+margin: 0px 5px;
+top: -35px;
+}
+
+#top .avia-layerslider .ls-nav-start:before, #top .avia-layerslider .ls-nav-stop:before{
+top:0;
+left:0;
+right:0;
+bottom:0;
+position: absolute;
+color:#fff;
+line-height: 23px;
+
+}
+
+#top .avia-layerslider .ls-nav-start:before{
+text-indent: 1px;
+}
+
+.avia-layerslider div .ls-fullwidth .ls-thumbnail-hover {
+bottom: 39px;
+padding: 2px;
+margin-left: 2px;
+}
+
+div .avia-layerslider .ls-fullwidth .ls-bottom-slidebuttons, div .avia-layerslider .ls-fullwidth div .avia-layerslider .ls-nav-start, div .avia-layerslider .ls-fullwidth .ls-nav-stop, div .avia-layerslider .ls-fullwidth .ls-nav-sides {
+top: -40px;
+}
+
+#top .avia-layerslider .ls-wp-container{
+margin:0px auto !important;
+}
+
+.avia-layerslider .ls-bottom-nav-wrapper{position: relative;}
+
+html * div .avia-layerslider .ls-wp-container .ls-layer > *, body * div .avia-layerslider .ls-wp-container .ls-layer > *, #ls-global * div .avia-layerslider .ls-wp-container .ls-layer > * {
+line-height: 1em;
+}
+
+
+.avia-layerslider .ls-thumbnail-wrapper{
+bottom: 120px;
+opacity: 1 !important;
+display:block !important;
+}
+
+/*layerslider default iconfont values. overwriten in case user applies a custom font value*/
+#top .avia-layerslider .ls-nav-prev:before{
+content: "\E87c";
+}
+#top .avia-layerslider .ls-nav-next:before{
+content: "\E87d";
+}
+#top .avia-layerslider .ls-nav-start:before{
+content: "\E897";
+}
+#top .avia-layerslider .ls-nav-stop:before{
+content: "\E899";
+}
+#top .avia-layerslider .ls-bottom-slidebuttons a, #top .avia-layerslider .ls-nav-next:before, #top .avia-layerslider .ls-nav-prev:before, #top .avia-layerslider .ls-nav-start:before, #top .avia-layerslider .ls-nav-stop:before{
+font-family: 'entypo-fontello';
+}
+
+
+

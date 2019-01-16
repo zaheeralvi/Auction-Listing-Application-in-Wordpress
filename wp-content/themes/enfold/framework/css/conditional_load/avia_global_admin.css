@@ -1,0 +1,23 @@
+
+
+/*admin notice*/
+.toplevel_page_avia #wpbody-content .notice{
+	margin: 19px 22px 2px 0;
+    width: 98.5%;
+    width: calc(100% - 20px);
+    max-width: 1300px;
+    min-width: 680px;
+    box-sizing: border-box;
+    padding: 5px 45px 5px 15px;
+}
+
+#wpwrap .avia-admin-notice{
+	padding: 5px 15px;
+}
+
+#wpwrap .avia-admin-notice .notice-dismiss {
+    padding: 13px;
+}
+
+
+

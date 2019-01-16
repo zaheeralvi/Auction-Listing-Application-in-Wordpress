@@ -1,0 +1,119 @@
+/*--------------------lightbox enhancements---------------*/
+
+
+/* 
+
+.mfp-figure - container that holds image and caption
+.mfp-bg     - black overlay
+.mfp-preloader - "Loading..." incdicator
+
+*/
+.mfp-ready .mfp-figure {
+  opacity: 0;
+}
+
+div .mfp-title{
+	line-height: 1.4em;
+    font-size: 13px;
+}
+
+.mfp-title a{ text-decoration: underline; color:#fff;}
+.mfp-title a:hover{ text-decoration: none; opacity: 0.8;}
+
+.mfp-zoom-in .mfp-figure, .mfp-zoom-in .mfp-iframe-holder .mfp-iframe-scaler{
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.mfp-zoom-in.mfp-bg,
+.mfp-zoom-in .mfp-preloader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-image-loaded .mfp-figure, .mfp-zoom-in.mfp-ready .mfp-iframe-holder .mfp-iframe-scaler{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg,
+.mfp-zoom-in.mfp-ready .mfp-preloader {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-figure, .mfp-zoom-in.mfp-removing .mfp-iframe-holder .mfp-iframe-scaler{
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg,
+.mfp-zoom-in.mfp-removing .mfp-preloader {
+  opacity: 0;
+}
+div.avia-popup .mfp-iframe-scaler{ overflow: visible; /*so the close button is shown*/}
+div.avia-popup .mfp-zoom-out-cur { cursor: auto; }
+div.avia-popup .mfp-zoom-out-cur .mfp-image-holder .mfp-close { cursor: pointer; }
+div.avia-popup .mfp-close {
+width: 40px;
+height: 40px;
+right: -13px;
+text-align: center;
+border-radius: 100px;
+border: 2px solid transparent;
+line-height: 38px;
+padding: 0;
+top: -5px;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+font-family: Arial, Baskerville, monospace !important;
+}
+
+div.avia-popup .mfp-close:hover{ 
+border: 2px solid #fff; 
+transform: scale(0.8);
+-webkit-transform: scale(0.8) rotateZ(90deg);
+}
+
+div.avia-popup .mfp-iframe-scaler .mfp-close{top: -43px;}
+
+div.avia-popup .mfp-figure:after{box-shadow: none; display: none;}
+
+div.avia-popup button.mfp-arrow:before, div.avia-popup button.mfp-arrow:after{border:none; margin:0; display:none;}
+div.avia-popup button.mfp-arrow:before{ 
+opacity:1; display:block; position: absolute; top:50%; left:0; width:100%; height:80px; line-height:80px; margin-top:-40px; color:#fff; font-size: 50px;
+-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: normal;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+-webkit-transform: scale(1,1);
+transform: scale(1,1);
+}
+div.avia-popup button.mfp-arrow:hover:before{-webkit-transform: scale(0.8,0.8); transform: scale(0.8,0.8);}
+div.avia-popup button.mfp-arrow:before		{ content:"\E87d"; font-family: 'entypo-fontello'; }
+div.avia-popup button.mfp-arrow-left:before { content:"\E87c"; font-family: 'entypo-fontello'; }
+
+/*seems to cause problems on safari and chrome so disabled temp: https://github.com/KriesiMedia/wp-themes/issues/1171
+.mfp-img{
+-webkit-animation: avia-fadein 10.7s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+animation:         avia-fadein 10.7s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+}*/
+
+.mfp-img {
+-webkit-animation: none !important;
+animation: none !important;
+}
+
+
+
+
+@media (max-width: 900px){
+.mfp-arrow {
+text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+}
+
+
+div.avia-popup .mfp-s-error .mfp-preloader {background: transparent; width:100%; -webkit-animation: none; animation: none; white-space: nowrap;}

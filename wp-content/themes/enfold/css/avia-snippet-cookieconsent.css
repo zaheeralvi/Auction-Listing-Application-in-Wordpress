@@ -1,0 +1,275 @@
+/* ======================================================================================================================================================
+#Cookie Consent
+====================================================================================================================================================== */
+
+.avia-cookie-consent{
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.85);
+	z-index: 999;
+	color: rgba(255,255,255,0.9);
+	padding: 1.1em;
+	text-align: center;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+.avia-cookie-consent .container{
+	float: none !important;
+	padding: 0 !important;
+}
+
+.avia-cookie-consent a.avia_cookie_infolink,
+.avia-cookie-consent p,
+.avia-cookie-consent .avia-cookie-consent-button{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+}
+
+.avia-cookie-consent a.avia_cookie_infolink{
+	color: inherit;
+}
+
+.avia-cookie-consent p{
+	margin: 0;
+}
+
+.avia-cookie-consent a.avia_cookie_infolink,
+.avia-cookie-consent p{
+	margin-right: 0.5em;
+}
+
+.avia-cookie-consent .avia-cookie-consent-button{
+	cursor: pointer;
+	display: inline-block;
+	background-color: #fff;
+	border:2px solid transparent;
+	color: #000;
+	padding: 1.1em;
+	min-width: 80px;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+	line-height: 1;
+	white-space: nowrap;
+	margin:0 0 0 6px;
+}
+
+.avia-cookie-consent .avia-cookie-consent-button.av-extra-cookie-btn{
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+}
+
+a.avia-cookie-consent-button:hover{
+	opacity: 0.9;
+}
+
+.avia-cookiemessage-bottom{
+	bottom: 0;
+	left: 0;
+}
+
+.avia-cookiemessage-top{
+	top: 0;
+	left: 0;
+}
+
+.avia-cookiemessage-top-left,
+.avia-cookiemessage-bottom-left,
+.avia-cookiemessage-top-right,
+.avia-cookiemessage-bottom-right{
+	width: 25%;
+}
+
+.avia-cookiemessage-top-left a.avia_cookie_infolink,
+.avia-cookiemessage-bottom-left a.avia_cookie_infolink,
+.avia-cookiemessage-top-right a.avia_cookie_infolink,
+.avia-cookiemessage-bottom-right a.avia_cookie_infolink,
+.avia-cookiemessage-top-left p,
+.avia-cookiemessage-bottom-left p,
+.avia-cookiemessage-top-right p,
+.avia-cookiemessage-bottom-right p {
+	display: block;
+	margin-right: 0;
+}
+
+.avia-cookiemessage-top-left .avia-cookie-consent-button,
+.avia-cookiemessage-bottom-left .avia-cookie-consent-button,
+.avia-cookiemessage-top-right .avia-cookie-consent-button,
+.avia-cookiemessage-bottom-right .avia-cookie-consent-button{
+	margin: 0.5em;
+}
+
+.avia-cookiemessage-bottom-right{
+	bottom: 30px;
+	right: 30px;
+}
+
+.avia-cookiemessage-top-right{
+	top: 30px;
+	right: 30px;
+}
+
+.avia-cookiemessage-bottom-left{
+	bottom: 30px;
+	left: 30px;
+}
+
+.avia-cookiemessage-top-left{
+	top: 30px;
+	left: 30px;
+}
+
+.avia-cookie-consent.cookiebar-hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.avia-cookiemessage-top.cookiebar-hidden {
+	transform: translateY(-110%);
+}
+
+.avia-cookiemessage-bottom.cookiebar-hidden {
+	transform: translateY(110%);
+}
+
+.avia-cookiemessage-bottom-left.cookiebar-hidden,
+.avia-cookiemessage-top-left.cookiebar-hidden {
+	transform: translateX(-110%);
+}
+
+.avia-cookiemessage-bottom-right.cookiebar-hidden,
+.avia-cookiemessage-top-right.cookiebar-hidden {
+	transform: translateX(110%);
+}
+
+.avia-cookie-consent.avia-cookiemessage-bottom.cookiebar-hidden{
+	bottom: -50px;
+}
+
+body.admin-bar .avia-cookiemessage-top,
+body.admin-bar .avia-cookiemessage-top-right,
+body.admin-bar .avia-cookiemessage-top-left
+{
+	margin-top: 32px;
+}
+
+.av-inline-modal {
+    padding: 20px;
+    border-radius: 4px;
+    min-width: 250px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    -webkit-transition: opacity 0.2s ease-in-out;
+	transition: 		opacity 0.2s ease-in-out;
+	opacity: 0;
+}
+
+.avia-popup .av-inline-modal{
+	display:block;
+	opacity: 1;
+}
+
+.avia-popup.mfp-removing .av-inline-modal{
+	opacity: 0;
+}
+
+.avia-popup .av-inline-modal .mfp-close{
+	right: 18px;
+	top:18px;
+}
+
+.avia-popup .av-inline-modal .mfp-close:hover{
+    border: 2px solid #e1e0e0;
+}
+
+.avia-popup .av-inline-modal .tabcontainer{
+	min-height: 320px;
+}
+
+.avia-popup .av-inline-modal .tab{
+	    padding: 20px 16px;
+	    font-size: 14px;
+    font-weight: bold;
+}
+
+.avia-popup .av-inline-modal > .av-special-heading{padding-right:40px;}
+
+
+/*
+@media only screen and (max-width: 989px){
+
+	.avia-cookie-consent .container{
+		padding: 0;
+	}
+
+	.avia-cookie-consent a.avia_cookie_infolink,
+	.avia-cookie-consent p
+	{
+		display: block;
+		margin-right: 0;
+	}
+
+	.avia-cookie-consent-button{
+		margin: 0.5em;
+	}
+
+	.av-framed-box .avia-cookiemessage-top,
+	.av-framed-box .avia-cookiemessage-bottom
+	{
+		width: 100% !important;
+		left: 0 !important;
+	}
+
+	.av-framed-box .avia-cookiemessage-bottom{
+		bottom: 0 !important;
+	}
+
+	.av-framed-box .avia-cookiemessage-top{
+		top: 0 !important;
+	}
+
+	.avia-cookiemessage-top-left,
+	.avia-cookiemessage-bottom-left,
+	.avia-cookiemessage-top-right,
+	.avia-cookiemessage-bottom-right{
+		width: 35%;
+	}
+}
+*/
+/*
+@media screen and (max-width:782px) {
+	body.admin-bar .avia-cookiemessage-top,
+	body.admin-bar .avia-cookiemessage-top-left,
+	body.admin-bar .avia-cookiemessage-top-right
+	{
+		margin-top: 46px;
+	}
+
+	.avia-cookiemessage-top-left,
+	.avia-cookiemessage-bottom-left,
+	.avia-cookiemessage-top-right,
+	.avia-cookiemessage-bottom-right{
+		width: 55%;
+	}
+}
+*/
+/*
+@media screen and (max-width: 480px) {
+	.avia-cookiemessage-top-left,
+	.avia-cookiemessage-bottom-left,
+	.avia-cookiemessage-top-right,
+	.avia-cookiemessage-bottom-right{
+		width: 85% !important;
+		left: 7.5% !important;
+		right: 7.5% !important;
+	}
+}
+*/

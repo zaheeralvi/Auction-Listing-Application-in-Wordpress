@@ -1,0 +1,25 @@
+.avia-buttonrow-wrap > .avia-button{
+    vertical-align: bottom;
+}
+
+.avia-buttonrow-left{
+    text-align: left;
+}
+
+.avia-buttonrow-right{
+    text-align: right;
+}
+
+.avia-buttonrow-center{
+    text-align: center;
+}
+
+.avia-buttonrow-right .avia-button:first-child,
+.avia-buttonrow-left .avia-button:first-child{
+    margin-left: 0 !important;
+}
+
+.avia-buttonrow-right .avia-button:last-child,
+.avia-buttonrow-left .avia-button:last-child {
+    margin-right: 0 !important;
+}

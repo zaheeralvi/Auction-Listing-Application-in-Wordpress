@@ -1,0 +1,200 @@
+/* ======================================================================================================================================================
+Tabs
+====================================================================================================================================================== */
+#top .tabcontainer{
+background: transparent;
+}
+
+.tabcontainer{
+margin: 30px 0;
+position: relative;
+width:100%;
+clear: both;
+overflow: hidden;
+background: transparent;
+}
+
+.tab_titles{
+position: relative;
+width:100%;
+clear: both;
+float:left;
+z-index: 5;
+}
+
+.widget .tabcontainer{
+margin-top:0px;
+}
+
+
+.js_active .tab_content{
+visibility: hidden;
+clear: both;
+padding: 10px 19px;
+overflow:auto;
+position: absolute;
+top:0;
+z-index: 0;
+left:120%;
+width:100%;
+}
+
+.js_active .tab{
+cursor:pointer;
+margin:0 -1px 0 0;
+display: block;
+float: left;
+z-index: 2;
+position: relative;
+padding:12px 16px;
+top:1px;
+font-size: 0.8em;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+border-style: solid;
+border-width:1px;
+}
+
+.js_active .top_tab .tab{
+border-bottom: none;
+padding:12px 16px 14px 16px;
+}
+
+.js_active .active_tab{
+z-index: 4;
+position: relative;
+font-weight: bold;
+}
+
+.js_active .tab_titles .tab:first-child{
+border-top-left-radius:  2px;
+}
+
+.js_active .tab_titles .tab:last-child{
+border-top-right-radius: 2px;
+}
+
+.js_active .active_tab_content{
+display: block;
+visibility: visible;
+z-index: 3;
+position: relative;
+overflow:auto;
+border-style: solid;
+border-width:1px;
+border-radius: 2px;
+left:0;
+width:auto;
+}
+
+.tabcontainer .tab_icon{
+margin-right: 7px;
+font-size: 1em;
+}
+
+.tab_inner_content{
+margin: 11px 0;
+left:-200%;
+position: relative;
+}
+
+.active_tab_content .tab_inner_content{
+left:0;
+position: relative;
+}
+
+/*sidebar tabs*/
+
+
+
+.sidebar_tab .tab_titles{
+width:30%;
+min-width:170px;
+max-width:250px;
+float:left;
+display: block;
+}
+
+
+
+.sidebar_tab_right .tab_titles{
+float:right;
+}
+
+.sidebar_tab .tab_titles .tab{
+width:100%;
+margin:0 0 -1px 0;
+top:0;
+}
+
+.sidebar_tab .tab_content{
+overflow: hidden;
+clear:none;
+left: -1px;
+}
+
+.sidebar_tab_right .tab_content{
+left: 1px;
+}
+
+.js_active .sidebar_tab .tab_titles .tab:last-child{
+border-top-right-radius: 0;
+border-bottom-left-radius: 2px;
+}
+
+.sidebar_tab_left .active_tab.tab{
+width:100.5%;
+border-right:none;
+}
+
+.sidebar_tab_right .active_tab.tab{
+width:100.5%;
+border-left:none;
+left:-1px;
+}
+
+/*noborder sidebar tabs*/
+
+.noborder_tabs.sidebar_tab_left .tab_content, .noborder_tabs.sidebar_tab_right .tab_content{
+border:none;
+box-shadow: -8px 0px 20px -10px rgba(0, 0, 0, 0.2);
+left:0;
+padding:0px 0 0 30px;
+}
+
+.noborder_tabs.sidebar_tab_right .tab_content{
+box-shadow: 8px 0px 20px -10px rgba(0, 0, 0, 0.2);
+padding:0px 30px 0 0;
+}
+
+.noborder_tabs.sidebar_tab_left .tab{
+border-left:none;
+}
+
+.noborder_tabs.sidebar_tab_right .tab{
+border-right:none;
+}
+
+.noborder_tabs .tab:first-child{
+border-top:none;
+}
+.noborder_tabs .tab:last-child{
+border-bottom:none;
+}
+
+.tabcontainer .tab.fullsize-tab{display:none;}
+
+@media only screen and (max-width: 767px)  {
+	.responsive .tabcontainer{border-width: 1px; border-style: solid; border-top:none; overflow: hidden;}
+	.responsive .tabcontainer .tab_titles{display:none;}
+	.responsive .tabcontainer .tab_content, .responsive .tabcontainer .tab
+	{width:100%; max-width:100%; border-left:none; border-right:0;left:0; top:0; min-height: 0!important;}
+	.responsive .tabcontainer .tab_content{border-bottom:none; padding:15px 30px; clear: both; }
+	.responsive .tabcontainer .tab.fullsize-tab{ display:block; margin-bottom:-1px;}
+	.responsive .top_tab .tab.fullsize-tab{ margin-bottom:0px;}
+
+}

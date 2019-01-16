@@ -1,0 +1,58 @@
+/* ======================================================================================================================================================
+Text Rotator
+====================================================================================================================================================== */
+#top .av-rotator-container{position: relative; }
+#top .av-rotator-container-inner{position: relative; line-height: 1.1em; margin:0; font-weight:300; text-transform:none; color:inherit; font-size: inherit;}
+#top p.av-rotator-container .av-rotator-container-inner{line-height: 1.1em;}
+.av-rotator-text, .av-rotator-text-single{position: relative; display: inline; }
+
+
+.av-rotator-text-single{display: none; top:0; }
+.av-rotator-text-single:first-child{display: inline-block;}
+.av-typewriter .av-rotator-text-single:first-child{display: inline;}
+
+
+#top .av-rotator-container a:hover{text-decoration: underline;}
+.av-fixed-rotator-width .av-rotator-text{text-align: left; display: inline-block; }
+.av-typewriter .av-rotator-text{display: inline; }
+.av-rotator-multiline-on.av-rotator-text{display:block;}
+.av-rotation-container-center .av-rotator-multiline-on.av-rotator-text{display:block; margin:0 auto; text-align: center;}
+
+
+/* typewriter effect */
+.av-caret .av-rotator-text-single:after{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-color:currentColor;
+	content: "";
+	
+}
+
+
+
+.av-blinking-caret .av-rotator-text-single:after{
+	-webkit-animation: blink-caret 1s step-end infinite;
+	animation: blink-caret 1s step-end infinite;
+}
+
+
+.av-marked-text .av-rotator-text-single{
+	color:#fff !important;
+}
+
+
+
+@media only screen and (max-width: 767px)
+{
+	.responsive.no-preview  #top .av-rotator-container-inner{font-size: 0.7em;}
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { opacity: 0 }
+  50% { opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 0 }
+  50% { opacity: 1; }
+}

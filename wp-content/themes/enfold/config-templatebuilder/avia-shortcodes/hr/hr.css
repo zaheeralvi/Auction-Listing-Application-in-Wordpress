@@ -1,0 +1,63 @@
+/* ======================================================================================================================================================
+HR
+====================================================================================================================================================== */
+
+.hr{
+clear: both;
+display:block;
+width:100%;
+height:25px;
+line-height:25px;
+position: relative;
+margin:30px 0;
+float:left;
+}
+
+.hr-inner{
+width:100%;
+position: absolute;
+height:1px;
+left:0;
+top:50%;
+width:100%;
+margin-top:-1px;
+border-top-width:1px;
+border-top-style:solid;
+}
+
+#top .hr-invisible, .hr-invisible .hr-inner{margin:0; border:none; }
+
+.hr-invisible {float:none;}
+
+.hr-full, .hr-big{margin:70px 0;}
+.hr-full .hr-inner{width:300%; left:-100%;}
+.hr-full.hr-shadow .hr-inner{ box-shadow:0 1px 2px 0px rgba(0, 0, 0, 0.1);}
+.sidebar_right .hr-full .hr-inner{left:auto; right:-50px;}
+.sidebar_left .hr-full .hr-inner{left:-50px;}
+
+
+
+.hr-short{height:20px; line-height:20px; margin:30px 0; float:none;}
+.hr-short .hr-inner{ width:32%; left:50%; margin-left:-16%;  }
+.hr-short.hr-left .hr-inner{  left:0%; margin-left:0%;}
+.hr-short.hr-right .hr-inner{ left:auto; right:0; margin-left:0%; }
+.hr-short .hr-inner-style{border-radius: 20px; height:9px; width:9px; border-width:2px; border-style:solid; display:block; position: absolute; left:50%; margin-left:-5px; margin-top:-5px; }
+.hr-short.hr-left .hr-inner-style{  left:5px; }
+.hr-short.hr-right .hr-inner-style{  left:auto; right:0; }
+
+body .container_wrap .hr.avia-builder-el-last, body .container_wrap .hr.avia-builder-el-first {
+margin:30px 0;
+}
+
+
+/*custom*/
+.hr-custom{margin:0; display: block; min-height:21px; height:auto; overflow: hidden; white-space: nowrap; width:100%; float: left;}
+.hr-custom .hr-inner{display: inline-block; position: relative; vertical-align: middle;}
+.hr-custom.hr-center{text-align: center;}
+.hr-custom.hr-right {text-align: right;}
+.hr-custom.hr-left  {text-align: left;}
+
+.hr-custom .hr-inner.inner-border-av-border-none{border:none;}
+.hr-custom .hr-inner.inner-border-av-border-fat{border-top-width:2px;}
+.av-seperator-icon { display: inline-block; vertical-align: middle; font-size: 15px; }
+.hr-custom.hr-icon-yes .hr-inner{margin-left:10px; margin-right:10px;}

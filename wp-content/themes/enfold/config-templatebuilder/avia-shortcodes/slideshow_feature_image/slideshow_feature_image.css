@@ -1,0 +1,71 @@
+/* ======================================================================================================================================================
+Slideshow Feature Image Slider
+====================================================================================================================================================== */
+#top .avia-featureimage-slideshow{ margin:0; }
+
+#top .avia-slideshow-fixed-height > li{
+position: absolute;
+width:100%; height:100%;
+background-size: cover;
+background-position: center center;
+}
+
+.avia-featureimage-slideshow .caption_container{
+	height:100%;
+}
+
+.avia-featureimage-slideshow .slideshow_caption h2{
+	margin:0;
+	text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+}
+
+.avia-featureimage-slideshow h2.avia-caption-title:after {
+    display: block;
+    content: "";
+    width: 40px;
+    border-top: 3px solid #fff;
+    margin: 11px auto;
+    position: relative;
+    top: 7px;
+}
+
+.main_color .av-no-image-slider h2 a{
+	text-shadow: none;
+}
+
+.avia_desktop .avia-featureimage-slideshow .avia-slideshow-arrows a{ opacity: 0; }
+#top .avia-featureimage-slideshow:hover .avia-slideshow-arrows a{opacity: 1;}
+
+#top .avia-featureimage-slideshow .avia-caption-content{
+	margin:0 auto;
+	max-width: 600px;
+	padding-top: 4px;
+}
+
+
+@media only screen and (max-width: 767px)
+{
+	#top .avia-featureimage-slideshow .avia-caption-content{
+	display:none;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+	
+.responsive.av-no-preview #top .av-mdedium-font-size-overwrite.avia-caption-content{display:block;}
+
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.responsive.av-no-preview #top .av-small-font-size-overwrite.avia-caption-content{display:block;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+.responsive.av-no-preview #top .av-mini-font-size-overwrite.avia-caption-content{display:block;}
+
+}

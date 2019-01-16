@@ -1,0 +1,200 @@
+
+/* .gp_sajak */
+.gp_sajak {
+	position: relative;
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	margin: 20px 0px 20px;
+}
+
+.gp_sajak_header {
+	background: #f9f9f9; /* Old Browsers */
+	background: -webkit-linear-gradient(top,#f9f9f9,#ececec); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top,#f9f9f9,#ececec); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top,#f9f9f9,#ececec); /*Fx 3.6-15*/
+	background: linear-gradient(to bottom, #f9f9f9, #ececec); /*Standard*/	
+    padding: 20px 20px 20px 10px;
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+}
+
+.gp_sajak_header h2 {
+	color: gray;
+	font-size: 22px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	margin: 6px;	
+}
+
+.gp_sajak_sidebar {
+	background-color: #dedede;
+	border-right: 1px solid #cecece;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+}
+
+.gp_sajak_sidebar ul {
+	margin: 0;
+}
+
+.gp_sajak_sidebar ul li {
+	background-color: #efefef;
+	border-bottom: 1px solid #cecece;
+    margin: 0;
+}
+
+.gp_sajak_sidebar ul li.sajak-state-active {
+	background-color: #fff;
+    border-left: 5px solid green;
+}
+
+.gp_sajak_sidebar ul li .fa {
+	color: gray;
+    display: block;
+    float: left;
+    height: 100%;
+    padding: 4px 4px 0 0;
+    text-align: center;
+    width: 20px;	
+}
+
+.gp_sajak_sidebar ul li.sajak-state-active .fa {
+	color: darkolivegreen;
+}
+
+.gp_sajak_sidebar ul li a {
+	color: black;
+	display: block;
+    margin: 0;
+    padding: 10px 10px 10px 4px;
+	text-decoration: none;	
+}
+
+.gp_sajak_sidebar ul li a:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.gp_sajak_sidebar ul li.sajak-state-active a {
+    color: green;
+    font-weight: bold;
+	outline: none;
+}
+
+
+.gp_sajak .gp_sajak_body {
+    position: relative;
+}
+
+.gp_sajak_main {
+	background-color: white;
+	margin-left: 200px;
+	min-height: 700px;
+	padding: 20px;
+}
+
+.gp_sajak_main .gp_sajak_tab_header {
+	margin-top: 0;
+}
+.gp_sajak .gp_sajak_tab_body h2,
+.gp_sajak .gp_sajak_tab_body h3 {
+	margin-top: 0;
+}
+
+.gp_sajak_save_button {
+    float: right;
+}
+
+.gp_sajak_save_button .submit {
+    margin: 0;
+    padding: 0;
+}
+
+/* wrapper */
+.gp_sajak_buttons {
+    float: right;
+}
+
+.gp_sajak_button {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.gp_sajak_button .button {
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+.gp_sajak_button .btn-purple {
+    background-color: #800080; /* purple */
+    border-color: navy;
+    color: gold;
+}
+
+.gp_sajak_button .btn-purple:active,
+.gp_sajak_button .btn-purple:focus,
+.gp_sajak_button .btn-purple:hover {
+    background-color: #9A1A9A; /* 10% lighter putple */
+    color: gold;
+}
+
+.gp_sajak_footer {
+	background: #ececec; /* Old Browsers */
+	background: -webkit-linear-gradient(top,#ececec,#f9f9f9); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top,#ececec,#f9f9f9); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top,#ececec,#f9f9f9); /*Fx 3.6-15*/
+	background: linear-gradient(to bottom, #ececec, #f9f9f9); /*Standard*/	
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+    padding: 20px 20px 20px 10px;
+	min-height: 28px;
+}
+
+@media (max-width: 600px) {
+	.gp_sajak_sidebar ul li.gp_sajak_menu_label .label_text {
+		display: none;
+	}
+	.gp_sajak_main {
+		margin-left: 41px;
+	}
+	.gp_sajak_sidebar {
+		width: 40px;
+	}
+	.gp_sajak_sidebar ul li {
+		box-sizing: border-box;
+		height: 40px;
+		padding-left: 5px;
+		width: 40px;
+	}	
+	.gp_sajak_save_button,
+	.gp_sajak_buttons {
+		clear: both;
+		display: block;
+		height: auto;
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.gp_sajak_save_button .button,
+	.gp_sajak_button {
+		margin-right: 0;
+		float: none;
+		width: 100%;
+	}
+	.gp_sajak_save_button .button,
+	.gp_sajak_button .button {
+		display: block;
+		clear: both;
+		text-align: center;
+		margin-right: 0;
+	}
+	.gp_sajak_header h2 {
+		line-height: 1.5;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,11 @@
+/*Custom Template Builder Elements*/
+
+.av-upcoming-events{}
+.av-upcoming-event-entry{clear: both; padding:0 0 25px 0; overflow: hidden; display:block;}
+.av-upcoming-event-entry:hover{text-decoration: none; color: inherit;}
+.av-upcoming-event-entry:last-child {padding-bottom: 0;}
+.av-upcoming-event-image{border-radius: 400px; width:60px; float:left; margin: 0 20px 0 0; }
+.av-upcoming-event-data{ display:block; overflow: hidden; }
+.av-upcoming-event-meta{ display:block; position: relative; top:-1px; font-size: 12px;}
+.av-upcoming-event-schedule{display:block;}
+.av-upcoming-events .pagination-meta{display:none;}
